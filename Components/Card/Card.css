@@ -24,10 +24,12 @@
     flex-flow: column;
     padding: 0 5px;
 }
+.card-body{
+    font-size: 1rem;
+}
 
 .card-footer{
     display: flex;
-    padding: 3px;
     justify-content: space-around;
     font-weight: 500;
     

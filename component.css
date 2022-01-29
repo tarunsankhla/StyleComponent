@@ -6,7 +6,6 @@
 @import url(./Components/Card/Card.css);
 @import url(./Components/Image/Image.css);
 @import url(./Components/Input/Input.css);
-@import url(./Documentation/Documentation.css);
 *{
   margin: 0;
   padding: 0;
@@ -45,6 +44,15 @@ body{
   --warinng-base-color:#fbff00;
   --warning-light-color:#fffff6;
   --warning-bg-color-gradient :linear-gradient(90deg, rgba(249,255,25,1) 0%, rgba(255,194,140,1) 100%);
+  --boldy-mid-gray: #ADACB5;
+  --boldy-light-gray: #D8D5DB;
+  --boldy-dark-purple:#2D3142;
+  --boldy-light-purple:#8C7AA9;
+  --boldy-light-green : #539987;
+  --boldy-dark-green: #27474E;
+  --boldy-dim-pink: #EAE8FF;
+  --boldy-bright-pink: #FFDDE2;
+  --box-shadow :#d2e4df;
 
   --border-radius: 5px;
 }
