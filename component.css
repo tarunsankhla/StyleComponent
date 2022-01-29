@@ -1,1 +1,52 @@
+
+@import url(./Components/Alert/Alert.css);
 @import url(./Components/Avatar/Avatar.css);
+@import url(./Components/Badge/Badge.css);
+@import url(./Components/Button/button.css);
+@import url(./Components/Card/Card.css);
+@import url(./Components/Image/Image.css);
+@import url(./Components/Input/Input.css);
+@import url(./Documentation/Documentation.css);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--lightest-bg-color);
+  font-family: 'Dongle', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+:root{
+  --primary-color:#64748B;
+  --primary-variant-color:#7d8288;
+  --text-color:#0F172A;   
+  --light-bg-color:#f1f7ff;
+  --lightest-bg-color:#f7f8f8;   
+  --btn-text-color:#07796f;
+  --btn-text-color-2:#27474e;
+  --hover-color:#e2e8f0;    
+  --badge-bg-color:#a1a1aa;
+  --nav-bg-color :#EAE8FF;
+
+  --warning-color:#fb2d2d;
+  --pleasent-warning:#FFDDE2;
+  --badge-shades-sucess-color:#25bd52;
+  --light-sucess-color:#c3f0d0;
+  --badge-shades-lgpurple-color:#EAE8FF;
+
+  --bold-blue-color:#2d3142;
+  --pleasent-blue-color:#B0D7FF;
+
+  --warinng-base-color:#fbff00;
+  --warning-light-color:#fffff6;
+  --warning-bg-color-gradient :linear-gradient(90deg, rgba(249,255,25,1) 0%, rgba(255,194,140,1) 100%);
+
+  --border-radius: 5px;
+}
+
+

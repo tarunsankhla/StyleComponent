@@ -1,0 +1,138 @@
+/* Navbar style */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+}
+.navbar-body{
+    padding-left: 3rem;
+    display: flex;
+}
+.navbar-body > div{
+    padding:1rem;
+    cursor: pointer;
+}
+.navbar-title{  
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+}
+
+.navbar-items{
+    text-decoration: none;
+}
+
+a.navbar-items {
+    padding: 1rem;
+}
+
+
+
+.container-drawer{
+    border-bottom: 2px solid black;
+}
+
+.sidebar-title{
+    border-bottom: 2px solid black;
+}
+
+.sidebar-body{
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-body-content{
+    cursor: pointer;
+    display:block;
+    padding: 1rem;
+    font-weight: 500;
+
+}
+
+.sidebar-body-content:hover{
+    color: var(--btn-text-color);
+}
+
+/* Container */
+.container-body{
+    /* font-size: 2rem; */
+    display: flex;
+    position: relative;
+}
+
+.image-container{
+    width: 80%;
+    height: auto;
+}
+
+a.sidebar-body-content{
+    text-decoration: none;
+}
+aside{
+    float: left;
+    min-width: 25rem;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.document-container{
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+
+/* Document page style for component */
+fieldset{
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: var(--pleasent-blue-color);
+    width: 80%;
+}
+
+legend{
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+
+.avatar-container{
+    
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+    aside{
+        border-right: 1px solid black;
+        /* padding: 1rem; */
+        flex-basis: 15rem;
+        min-width: 22rem;
+        
+        border-top: 2px solid black;
+        height: 100%;
+        width: 0;
+        /* position: absolute; */
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        /* overflow-x: hidden; */
+        transition: 0.5s;
+        position: absolute;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    aside{
+       float: left;
+    }
+}
