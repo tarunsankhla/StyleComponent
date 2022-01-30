@@ -1,27 +1,34 @@
-.avatar-md{
+
+.avatar{
+    object-fit:cover;
     height: 4rem;
     width: 4rem;
 }
 
-.avatar-sm{
-    height: 3rem;
-    width: 3rem;
-}
-
-.avatar-lg{
+.avatar-md{
     height: 5rem;
     width: 5rem;
 }
 
-.avatar-xlg{
+.avatar-lg{
     height: 6rem;
     width: 6rem;
 }
 
-.circle{
+.avatar-xlg{
+    height: 7rem;
+    width: 7rem;
+}
+
+.avatar-xxlg{
+    height: 8rem;
+    width: 8rem;
+}
+
+.img-round{
     border-radius: 50%;
 }
 
-.square{
+.img-square{
     border-radius: 7px;
 }

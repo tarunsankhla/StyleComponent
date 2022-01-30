@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="./Documentation.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="navbar-title">Tasank-UI</div>
+        <div class="navbar-body">
+            <a  class="navbar-items" href="./../index.html">Home</a>
+            <a  class="navbar-items" href="./Documentation.html">Documentation</a>
+        </div>
+    </div>
+    <div class="container-body">
+        <aside class="drawer-model-menu">
+            <div class="navbar-close-toggle">X</div>
+            <label class="sidebar-title">Components</label>
+            <ul class="sidebar-body">
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#avatar-container">Avatar</a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#alert-container">Alert </a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#badge-container">Badge </a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#button-container">Button</a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#card-container">Card  </a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#image-container">Image </a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#input-container">Input</a></li>
+             
+           
+            </ul>       
+        </aside>
+        
+        <section class="container">
+            <div class="container-drawer navbar-togglers">
+                <span class="material-icons-round navbar-togglers">
+                menu
+                </span>
+                
+                Components</div>
+            <div class="document-container">
+                <div class="content">
+                    <div id="avatar-container" class="avatar-content">
+                        <fieldset>
+                            <legend class="divider">Avatar</legend>
+                            
+                            <div>The Avatar is used for representing a person in a profile picture like a display icon. <br/>
+                            You can use the className of avatar at it will set the default size of 4 rem; you can use variation of avatar sizes based on your requirement like
+                            <li>avatar-md</li> 
+                            <li>avatar-lg</li> 
+                            <li>avatar-xlg</li> 
+                            <li>avatar-xxlg</li><br/>
+                            It also contains variation of geometry, for cirle <span class="markup">img-round</span> and for square  <span class="markup">img-square</span>                  
+                             </div>
+
+                            <div class="container-avatar-body">
+                                <img  class="avatar img-round" src="../assets/Img/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="" srcset="">
+                    
+                                <img class="avatar avatar-md img-round" src="../assets/Img/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="" srcset="">
+                    
+                                <img  class="avatar avatar-lg img-round" src="../assets/Img/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="" srcset="">
+                    
+                                <img  class="avatar avatar-xlg img-round" src="../assets/Img/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="" srcset="">
+                                <img  class="avatar avatar-xxlg img-round" src="../assets/Img/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="container-avatar-body">
+                                <img  class="avatar avatar-sm img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
+                    
+                                <img class="avatar avatar-md img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
+                    
+                                <img  class="avatar avatar-lg img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
+                    
+                                <img  class="avatar avatar-xlg img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
+                                <img  class="avatar avatar-xxlg img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
+                            </div>
+                        </fieldset>
+                        <div class="iframe-container">
+                            <iframe class="iframe-body"
+                            src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=one-dark&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=12px&ph=12px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=118%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-lg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%253E%250A%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-sm%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-lg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%250A%2520%2520%2520%253C%252Fdiv%253E"
+                            style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- <a href="https://storyset.com/design">Design illustrations by Storyset</a> -->
+                    <div id="badge-container" class="badge-content">
+                        
+                        <fieldset>
+                            <legend class="divider">Badges</legend>
+                            <div>Depending on specific requirement, badges may seem to a number indicatore or count of navigation. <br/>
+                            You can use the className of badge and it will set the default size; you can use variation of badge sizes based on your requirement like
+                            <li>badge-md</li> 
+                            <li>badge-sucess</li> <br/>
+                            It also contains variation in position, for top left to the container use <span class="markup">topleft-badge</span> and for top right use  <span class="markup">topright-badge</span> and default it is bottom right.
+                            <br/>
+                            You can also set background color by using classname :
+                            <li>badge-warning</li> 
+                            <li>badge-lg</li>
+                            <li>badge-primary</li> <br/>  
+                             </div>
+                            <h2>Badges on Icon</h2>
+                            <div class="badge-container">
+                                <span class="material-icons-round __drawer-icons">
+                                    inbox
+                                    </span>
+                                <div class="badge topright-badge"></div>            
+                            </div>
+                            <div class="badge-container">
+                                <span class="material-icons-round  __drawer-icons">
+                                    settings
+                                    </span>
+                                <div class="badge badge-sucess topright-badge"></div>            
+                            </div>
+                        
+                            <h2>Badges on Avatar</h2>
+                            <div class="badge-container">
+                                <img  class="avatar avatar-xxlg img-round" src="../assets/Img/robert-bagramov-vZWqy-Y5kTI-unsplash.jpg" alt="" srcset="">
+                                <div class="badge badge-lg badge-warning topright-badge">2</div>
+                            </div>
+                            <div class="badge-container">
+                                <img class="avatar avatar-xlg img-square" src="../assets/Img/pablo-merchan-montes-MXovqM130UI-unsplash.jpg" >
+                                <div class="badge badge-sucess topleft-badge">2</div>
+                            </div>
+                            <div class="badge-container">
+                                <img class="avatar avatar-xlg img-round" src="../assets/Img/christine-siracusa-vzX2rgUbQXM-unsplash.jpg" >
+                                <div class="badge"></div>
+                            </div>
+                            
+                            <h2>Badge on Button and text</h2>
+                            <div class="badge-container">
+                                <h2>Hello! this is component Libaray</h2>
+                                <div class="badge badge-lg badge-primary topright-badge">99+</div>
+                            </div>
+                            <div class="badge-container">
+                               <button class="example-button"> Am I a Button ?</button>
+                                <div class="badge badge-md badge-primary topright-badge">2</div>
+                            </div>
+                        </fieldset>
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2520__drawer-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520inbox%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520topright-badge%2522%253E%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2520%2520__drawer-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520settings%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sucess%2520topright-badge%2522%253E%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Frobert-bagramov-vZWqy-Y5kTI-unsplash.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-warning%2520topright-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fpablo-merchan-montes-MXovqM130UI-unsplash.jpg%2522%2520%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sucess%2520topleft-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Fchristine-siracusa-vzX2rgUbQXM-unsplash.jpg%2522%2520%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EHello%21%2520this%2520is%2520component%2520Libaray%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-lg%2520badge-primary%2520topright-badge%2522%253E99%252B%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522example-button%2522%253E%2520Am%2520I%2520a%2520Button%2520%253F%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-md%2520badge-primary%2520topright-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                        </div>
+                    </div>
+                    <div id="alert-container">
+                        
+                        <fieldset>
+                            <legend class="divider">Alert</legend>
+                            <div class="alert alert-outline-primary">
+                                <span class="material-icons-round">
+                                    thumb_up
+                                    </span>
+                                This is a primary alert- Check it out!
+                            </div>
+                    
+                            <div class="alert alert-outline-danger">
+                                <span class="material-icons-round">
+                                    notification_important
+                                    </span>
+                                This is a Danger alert- Check it out!
+                            </div>
+                    
+                            
+                            <div class="alert alert-outline-sucess">
+                                <span class="material-icons-round">
+                                    verified
+                                    </span>
+                                    
+                                    This is a sucess alert- Check it out!
+                            </div>
+                            <div class="alert alert-outline-warning">
+                                <span class="material-icons-round">
+                                    new_releases
+                                    </span>                                    
+                                This is a warning alert- Check it out!
+                            </div>
+                    
+                            <div class="alert alert-primary">
+                                <span class="material-icons-round">
+                                    thumb_up
+                                    </span>
+                                This is a primary alert- Check it out!
+                            </div>
+                            <div class="alert alert-danger">
+                                <span class="material-icons-round">
+                                    notification_important
+                                    </span>
+                                This is a Danger alert- Check it out!
+                            </div>
+                            
+                            <div class="alert alert-sucess">
+                                <span class="material-icons-round">
+                                    verified
+                                    </span>
+                                This is a sucess alert- Check it out!
+                            </div>
+                            
+                            <div class="alert alert-warning">
+                                <span class="material-icons-round">
+                                    new_releases
+                                    </span>                                  
+                                This is a warning alert- Check it out!
+                            </div>       
+                        </fieldset>
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-outline-primary%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253Ethumb_up%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520primary%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-danger%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253Enotification_important%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520Danger%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-sucess%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520verified%2520%253C%252Fspan%253E%250A%2509%2520This%2520is%2520a%2520sucess%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-warning%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520new_releases%2520%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520thumb_up%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520primary%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520notification_important%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520Danger%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-sucess%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520verified%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520sucess%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520new_releases%2520%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520"
+                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                        </div>
+                    </div>
+                    <div id="button-container">
+                        <fieldset>
+                            <legend class="divider">Button</legend>
+                            <button class="btn btn-icon"><span class="material-icons-round">save_as</span>Edit</button>
+                            <button class="btn btn-sucess btn-icon"><span class="material-icons-round"> book </span>Save</button>
+                            <button class="btn btn-warning btn-icon"><span class="material-icons-round">delete_forever</span>Delete</button>
+
+                            <h3>Outline Button</h3>
+                            <button class="btn btn-outline btn-icon"><span class="material-icons-round">save_as</span>Edit</button></button>
+                            <button class="btn btn-outline-sucess btn-icon"><span class="material-icons-round">book</span>Save</button>
+                            <button class="btn btn-outline-warning btn-icon"><span class="material-icons-round">delete_sweep</span>Remove</button>
+                            
+                            <h3>Icon Button</h3>
+                            
+                            <button class="btn btn-outline btn-icon"><span class="material-icons-round">pin_drop </span></button>
+                            
+                            <button class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">expand_less</span></button>
+                            <button class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">close</span></button>
+                                
+                                        
+                            <h3>Link Button</h3>
+                    
+                            <button class="btn btn-link">Help?</button>
+
+                            <h3>Butto size</h3>
+                            <button class="btn btn-lg">Button large</button>
+                            <button class="btn btn-sm">Button small</button>
+                        </fieldset>
+                        <div class="iframe-container">
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
+                            style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                            sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div id="image-container">
+                        <fieldset>
+                            <legend class="divider">Image</legend>
+                            <div class="image-container">
+                                <h3>image</h3>
+                                
+                                    <img src="../assets/Img/r-du-plessis-SGJzNs1ak6s-unsplash.jpg" style="width: 30rem; height: 30rem;"
+                                    class="image-round" alt="round image">
+                                    <img src="../assets/Img/alexander-schimmeck-R5IxlpyynrI-unsplash.jpg" class="image-responsive" alt="responsive image">
+                            
+                                </div>
+                            </fieldset>
+                            <div class="iframe-container">
+                                <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Fr-du-plessis-SGJzNs1ak6s-unsplash.jpg%2522%2520style%253D%2522width%253A%252030rem%253B%2520height%253A%252030rem%253B%2522%2520class%253D%2522image-round%2522%2520alt%253D%2522round%2520image%2522%253E%250A%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Falexander-schimmeck-R5IxlpyynrI-unsplash.jpg%2522%2520class%253D%2522image-responsive%2522%2520alt%253D%2522responsive%2520image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
+                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                    </div>
+                    <div id="input-container">
+                        <fieldset>
+                            <legend class="divider">Input</legend>
+                            <div id="input-container">
+                                <h3>input</h3>
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text"/>
+                                </div>
+                                <div class="input-group input-error">
+                                    <label>Name</label>
+                                    <input type="text"/>
+                                    <div>Name cannot contain number</div>
+                                </div>
+                            </div>
+                            </fieldset>
+                            <div class="iframe-container">
+                                <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-group%2520input-error%2522%253E%2520%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%253EName%2520cannot%2520contain%2520number%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                    </div>
+                    <div id="card-container">
+                        <fieldset>
+                            <legend class="divider">Card</legend>
+                            <div class="card">
+                                <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                             
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h1>Breakfast Story</h1>
+                                        <h3>by Tarun</h3>
+                                    </div>   
+                                    <div class="card-body">
+                                        We went across globe and covered a range of first meal of the day story.
+                                    </div>
+                                </div> 
+                                <div class="card-footer">
+                                    <div class="card-footer-view">
+                                        <button>READ</button>
+                                        <button>BOOKMARK</button>
+                                    </div>
+                                    <div class="card-footer-action">
+                                            <span class="material-icons-round">
+                                                favorite_border
+                                            </span>
+                                            <span class="material-icons-round">
+                                                share
+                                                </span>
+                                            <span class="material-icons-round">
+                                                more_vert
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            </fieldset>
+                            <div class="iframe-container">
+
+                                <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522..%252Fassets%252FImg%252Fchad-montano-MqT0asuoIcU-unsplash.jpg%2522%2520alt%253D%2522Food%2520Image%2522%2520srcset%253D%2522%2522%252F%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EBreakfast%2520Story%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253Eby%2520Tarun%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520We%2520went%2520across%2520globe%2520and%2520covered%2520a%2520range%2520of%2520first%2520meal%2520of%2520the%2520day%2520story.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-view%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EREAD%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBOOKMARK%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520favorite_border%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520share%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520more_vert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
+                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                                </iframe>
+                            </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <button id="scroll-top-btn" class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">expand_less</span></button>
+
+    </div>
+           
+
+    <script src="../script.js"></script>
+
+
+</body>
+</html>

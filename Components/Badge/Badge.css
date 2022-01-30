@@ -1,0 +1,55 @@
+.badge-container{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.badge{
+    
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    font-weight: 400;
+    background-color: var(--pleasent-blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.badge-md{
+    height: 2rem;
+    width: 2rem;
+}
+
+.badge-lg{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.badge-warning{
+    background-color: var(--warning-color);
+}
+
+.badge-sucess{
+    background-color: var(--badge-shades-sucess-color);
+}
+
+.badge-primary{
+    background-color: var(--bold-blue-color);
+}
+.topleft-badge{
+    top: 0;
+    left: 0;
+}
+
+.topright-badge{
+    top: -1px;
+    right: -1px;
+}
