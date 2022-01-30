@@ -109,42 +109,46 @@ rel="stylesheet">
                             <li>badge-lg</li>
                             <li>badge-primary</li> <br/>  
                              </div>
-                            <h2>Badges on Icon</h2>
-                            <div class="badge-container">
-                                <span class="material-icons-round __drawer-icons">
-                                    inbox
-                                    </span>
-                                <div class="badge topright-badge"></div>            
+                            <div class="content-title">Badges on Icon</div>
+                            <div class="badge-collection">
+                                <div class="badge-container">
+                                    <span class="material-icons-round __drawer-icons">
+                                        inbox
+                                        </span>
+                                    <div class="badge topright-badge"></div>            
+                                </div>
+                                <div class="badge-container">
+                                    <span class="material-icons-round  __drawer-icons">
+                                        settings
+                                        </span>
+                                    <div class="badge badge-sucess topright-badge"></div>            
+                                </div>
                             </div>
-                            <div class="badge-container">
-                                <span class="material-icons-round  __drawer-icons">
-                                    settings
-                                    </span>
-                                <div class="badge badge-sucess topright-badge"></div>            
+                            <div class="content-title">Badges on Avatar</div>
+                            <div class="badge-collection">
+                                <div class="badge-container">
+                                    <img  class="avatar avatar-xxlg img-round" src="../assets/Img/robert-bagramov-vZWqy-Y5kTI-unsplash.jpg" alt="" srcset="">
+                                    <div class="badge badge-lg badge-warning topright-badge">2</div>
+                                </div>
+                                <div class="badge-container">
+                                    <img class="avatar avatar-xlg img-square" src="../assets/Img/pablo-merchan-montes-MXovqM130UI-unsplash.jpg" >
+                                    <div class="badge badge-sucess topleft-badge">2</div>
+                                </div>
+                                <div class="badge-container">
+                                    <img class="avatar avatar-xlg img-round" src="../assets/Img/christine-siracusa-vzX2rgUbQXM-unsplash.jpg" >
+                                    <div class="badge"></div>
+                                </div>
                             </div>
-                        
-                            <h2>Badges on Avatar</h2>
-                            <div class="badge-container">
-                                <img  class="avatar avatar-xxlg img-round" src="../assets/Img/robert-bagramov-vZWqy-Y5kTI-unsplash.jpg" alt="" srcset="">
-                                <div class="badge badge-lg badge-warning topright-badge">2</div>
-                            </div>
-                            <div class="badge-container">
-                                <img class="avatar avatar-xlg img-square" src="../assets/Img/pablo-merchan-montes-MXovqM130UI-unsplash.jpg" >
-                                <div class="badge badge-sucess topleft-badge">2</div>
-                            </div>
-                            <div class="badge-container">
-                                <img class="avatar avatar-xlg img-round" src="../assets/Img/christine-siracusa-vzX2rgUbQXM-unsplash.jpg" >
-                                <div class="badge"></div>
-                            </div>
-                            
-                            <h2>Badge on Button and text</h2>
-                            <div class="badge-container">
-                                <h2>Hello! this is component Libaray</h2>
-                                <div class="badge badge-lg badge-primary topright-badge">99+</div>
-                            </div>
-                            <div class="badge-container">
-                               <button class="example-button"> Am I a Button ?</button>
-                                <div class="badge badge-md badge-primary topright-badge">2</div>
+                            <div class="content-title">Badge on Button and text</div>
+                            <div class="badge-collection">
+                                <div class="badge-container">
+                                    <h2>Hello! this is component Libaray</h2>
+                                    <div class="badge badge-lg badge-primary topright-badge">99+</div>
+                                </div>
+                                <div class="badge-container">
+                                <button class="example-button"> Am I a Button ?</button>
+                                    <div class="badge badge-md badge-primary topright-badge">2</div>
+                                </div>
                             </div>
                         </fieldset>
                         <div class="iframe-container">
@@ -156,9 +160,26 @@ rel="stylesheet">
                         </div>
                     </div>
                     <div id="alert-container">
-                        
+                       
                         <fieldset>
                             <legend class="divider">Alert</legend>
+                            <div>Alerts are for displaying message based on user action and mostly used for communicating the state of system. <br/>
+                                You can use the className of alert and it will set the default size. <br/>
+                                It also contains variation in outline and based on usecase like
+                                <br/>
+                                Sucess :
+                                <li>alert-outline-sucess</li> 
+                                <li>alert-sucess</li><br/>  
+                                Warning :
+                                <li>alert-outline-warning</li> 
+                                <li>alert-warning</li><br/>  
+                                Danger :
+                                <li>alert-outline-danger</li> 
+                                <li>alert-danger</li><br/>  
+                                Primary :
+                                <li>alert-outline-primary</li> 
+                                <li>alert-primary</li><br/>  
+                                 </div>
                             <div class="alert alert-outline-primary">
                                 <span class="material-icons-round">
                                     thumb_up
@@ -226,6 +247,24 @@ rel="stylesheet">
                     <div id="button-container">
                         <fieldset>
                             <legend class="divider">Button</legend>
+
+                            <div>Buttons are used for performing action or events. <br/>
+                                You can use the className of btn and it will set the default size. <br/>
+                                It also contains variation in outline and based on usecase like
+                                <br/>
+                                Sucess :
+                                <li>btn-sucess</li> 
+                                <li>btn-outlint-sucess</li><br/>  
+                                Warning :
+                                <li>btn-warning</li> 
+                                <li>btn-outline-warning</li><br/>
+                                
+                                Use <span class="markup">btn-icon</span> for adding icons to button and for round float buttons use <span class="markup">btn-round</span>.<br/>
+                                For link button use className  <span class="markup">btn</span> for button to act like a link clicker.
+                                You can also resize buttons using
+                                <li>btn-lg</li>
+                                <li>btn-sm</li>
+                                 </div>
                             <button class="btn btn-icon"><span class="material-icons-round">save_as</span>Edit</button>
                             <button class="btn btn-sucess btn-icon"><span class="material-icons-round"> book </span>Save</button>
                             <button class="btn btn-warning btn-icon"><span class="material-icons-round">delete_forever</span>Delete</button>
@@ -254,7 +293,7 @@ rel="stylesheet">
                         <div class="iframe-container">
                             <iframe
                             src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
-                            style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                            style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll;"
                             sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </div>
@@ -262,6 +301,10 @@ rel="stylesheet">
                     <div id="image-container">
                         <fieldset>
                             <legend class="divider">Image</legend>
+                            <div>Image component can be used to make image responsive and round shaped. <br/>
+                                <span class="markup">image-round</span> for a round shaped image<br/>
+                                <span class="markup">image-responsive</span> for image to fit the width of container<br/>
+                                 </div>
                             <div class="image-container">
                                 <h3>image</h3>
                                 
@@ -275,7 +318,7 @@ rel="stylesheet">
                                 <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Fr-du-plessis-SGJzNs1ak6s-unsplash.jpg%2522%2520style%253D%2522width%253A%252030rem%253B%2520height%253A%252030rem%253B%2522%2520class%253D%2522image-round%2522%2520alt%253D%2522round%2520image%2522%253E%250A%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Falexander-schimmeck-R5IxlpyynrI-unsplash.jpg%2522%2520class%253D%2522image-responsive%2522%2520alt%253D%2522responsive%2520image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
-                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                style="width: 100%; height: 20rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
                                 sandbox="allow-scripts allow-same-origin">
                                 </iframe>
                             </div>
@@ -283,6 +326,10 @@ rel="stylesheet">
                     <div id="input-container">
                         <fieldset>
                             <legend class="divider">Input</legend>
+                            <div>Input component are used for generally gather information from user. <br/>
+                                <span class="markup">input-group</span> is the container which consist of labal and input; the label is use to describe the label for the input.<br/>
+                                you can use className <span class="markup">input-error</span> for validation.<br/>
+                                 </div>
                             <div id="input-container">
                                 <h3>input</h3>
                                 <div class="input-group">
@@ -299,7 +346,7 @@ rel="stylesheet">
                             <div class="iframe-container">
                                 <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-group%2520input-error%2522%253E%2520%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%253EName%2520cannot%2520contain%2520number%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                                style="width: 100%; height: 45rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
+                                style="width: 100%; height: 20rem; border:0; transform: scale(1); overflow:scroll; overflow-y: scroll;"
                                 sandbox="allow-scripts allow-same-origin">
                                 </iframe>
                             </div>
@@ -307,6 +354,12 @@ rel="stylesheet">
                     <div id="card-container">
                         <fieldset>
                             <legend class="divider">Card</legend>
+                            <div>
+                                Card is a container to display information to user most of the time a product details showcase<br/>
+                                We can use the basic className <span class="markup">card</span> and add images by  <span class="markup">card-img</span>
+                                and for content in the card generally like a product description of name of the product will be in  <span class="markup">card-content</span>
+                                and for performing action like reading of sharing or bookmarking we can perform action by adding action button in footer of card under  <span class="markup">card-footer</span>
+                            </div>
                             <div class="card">
                                 <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
                              

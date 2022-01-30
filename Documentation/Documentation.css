@@ -130,10 +130,11 @@ legend{
 
 .container-avatar-body{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: center;
     align-items: center;
     padding: 1rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-flow: row-reverse;
 }
 
 .container-avatar-body *{
@@ -144,7 +145,7 @@ legend{
 
 
 
-/* sample style */
+/* scroll up btn style */
 
 .example-button{
     padding: 0.5rem;
@@ -161,27 +162,64 @@ legend{
     background-color: var(--boldy-light-green);
     cursor: pointer;
     font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    border:2px solid var(--boldy-light-purpl);
 }
+
+#scroll-top-btn >  span{
+    font-size: 3rem;
+    color: white;
+}
+
+#scroll-top-btn >  span:hover{
+    color: var(--boldy-light-purple);
+}
+
+
+
+
+/* documnent page containers */
+.badge-collection{
+    /* padding:1rem; */
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.badge-collection *{
+    /* margin: 0.5rem; */
+}
+
+.content-title{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+
 /* Media Query */
 
 @media screen and (max-width: 800px) {
     aside{
+        /* display: block; */
+
         border-right: 1px solid black;
-        /* padding: 1rem; */
         flex-basis: 15rem;
         min-width: 22rem;
-        
         border-top: 2px solid black;
         height: 100%;
         width: 0;
-        /* position: absolute; */
         z-index: 1;
         top: 0;
         left: 0;
         background-color: white;
-        /* overflow-x: hidden; */
         transition: 0.5s;
         position: absolute;
+
+
+         /* padding: 1rem; */
+        /* position: absolute; */
+        /* overflow-x: hidden; */
         /* position: -webkit-sticky;
         position: sticky;
         top: 0; */

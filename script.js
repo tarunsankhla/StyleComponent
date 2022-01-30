@@ -8,7 +8,6 @@ var nav_closer = document.querySelector('.navbar-close-toggle');
 var btn_scrolltop=document.querySelector('#scroll-top-btn');
 console.log(document.body.clientWidth);
 
-
 jQuery(document).ready(function($) {
     alterClass();
     function alterClass(){
