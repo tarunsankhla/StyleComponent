@@ -133,8 +133,8 @@ legend{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    /* flex-wrap: wrap; */
-    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .container-avatar-body *{
@@ -186,16 +186,23 @@ legend{
     flex-wrap: wrap;
 }
 
-.badge-collection *{
-    /* margin: 0.5rem; */
-}
-
 .content-title{
     font-weight: 500;
     font-size: 2rem;
 }
 
+.button-collection{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+/* Landing page */
+
+.illustartion-landpage{
+    height: 40rem;
+    width: 100%;
+    color:#539987;
+}
 
 /* Media Query */
 

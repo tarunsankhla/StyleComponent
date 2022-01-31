@@ -5,6 +5,8 @@ var nav_hider = document.querySelector('.hide-nav');
 var nav_toggler = document.querySelector('.navbar-togglers');
 var nav_closer = document.querySelector('.navbar-close-toggle');
 
+var navbar_li = document.querySelectorAll('.sidebar-body-content');
+
 var btn_scrolltop=document.querySelector('#scroll-top-btn');
 console.log(document.body.clientWidth);
 
@@ -53,15 +55,23 @@ nav_closer.addEventListener('click',()=>{
     document.querySelector('.hide-nav').style.visibility ="hidden";
 })
 
+for(let i=0;i<navbar_li.length;i++){
+    navbar_li[i].addEventListener('click',()=>{
+        console.log('click hider')
+        document.querySelector('.hide-nav').style.visibility ="hidden";
+    })
+}
+
+
 
 // scroll to top
 window.onscroll = function(){ 
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
         btn_scrolltop.style.display ="block";
-        console.log("Scroller btn");
+        // console.log("Scroller btn");
     }else{
         btn_scrolltop.style.display ="none";
-        console.log("Scroller btn");
+        // console.log("Scroller btn");
     }
 }
 

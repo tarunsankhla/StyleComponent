@@ -54,6 +54,11 @@ body{
   --boldy-bright-pink: #FFDDE2;
   --box-shadow :#d2e4df;
 
+  --dark-theme-bg :#2e3440;
+  --dark-theme-nav-bg:#539987;
+  --dark-theme-border-bg:#4d887b;
+  --dark-theme-nav-text:#4d887b;
+
   --border-radius: 5px;
 }
 

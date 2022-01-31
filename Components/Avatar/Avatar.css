@@ -3,6 +3,8 @@
     object-fit:cover;
     height: 4rem;
     width: 4rem;
+    border: 2px solid var(--boldy-dark-green);
+    box-shadow: 0 0 5px 0 var(--boldy-dark-green);
 }
 
 .avatar-md{

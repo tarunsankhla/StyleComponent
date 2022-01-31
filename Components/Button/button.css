@@ -53,6 +53,7 @@
     color: var(--primary-color);
     margin-bottom: 2px solid var(--primary-color);
     text-decoration: underline;
+    font-weight:600;
 }
 .btn-link:hover{
     background-color: transparent;
@@ -73,6 +74,8 @@
 .btn-sm{
     font-size: 1.5rem;
     font-weight: 400;
+    height: -webkit-fill-available;
+    width: max-content;
 }
 
 .btn-sucess{
