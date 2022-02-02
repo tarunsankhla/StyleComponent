@@ -230,8 +230,8 @@ legend{
 /* Landing page */
 
 .illustartion-landpage{
-    height: 40rem;
-    width: 100%;
+    /* height: 40rem; */
+    width: 300px;
     color:#539987;
 }
 
@@ -261,11 +261,15 @@ legend{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-basis: 300px;
 }
 .landing-main-image{
-    flex-basis: 50rem;
+    /* flex-basis: 50rem; */
     padding: 1rem;
-    /* width: 40rem; */
+    flex-grow: 1;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
 }
 
 .landing-installation{
@@ -372,7 +376,7 @@ footer{
         display: flex;
     }
     .illustartion-landpage{
-        height: 90vh;
+        /* height: 90vh; */
         width: 100%;
         color:#539987;
     }
