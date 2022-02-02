@@ -32,18 +32,22 @@ a.navbar-items {
     padding: 1rem;
 }
 
-
-
 .container-drawer{
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
+    font-size: 3rem;
+    padding: 1rem;
 }
 
 .sidebar-title{
     border-bottom: 2px solid black;
+    justify-content: center;
+    display: flex;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .sidebar-body{
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     display: flex;
     flex-flow: column;
@@ -101,6 +105,8 @@ aside{
     flex-flow: column;
     padding: 1rem;
     font-size: 2rem;
+    height: 60rem;
+    overflow-y: scroll;
 }
 
 .document-container{
@@ -117,8 +123,11 @@ fieldset{
     width: 100%;
     padding: 1rem;
     box-shadow: 0 0 25px 0 var(--box-shadow);
-    margin: 1rem;
+    /* margin: 1rem; */
     margin-top: 2rem;
+}
+.iframe-container{
+    padding: 1rem;
 }
 .markup{
     background-color: var(--box-shadow);
@@ -303,7 +312,8 @@ footer{
         background-color: white;
         transition: 0.5s;
         position: absolute;
-
+        height: 80rem;
+        overflow: scroll;
 
          /* padding: 1rem; */
         /* position: absolute; */
