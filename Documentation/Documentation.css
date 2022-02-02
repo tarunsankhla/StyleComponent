@@ -43,6 +43,15 @@ a.navbar-items {
     padding: 1rem;
 }
 
+.navbar-close-toggle{
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 3rem;
+    background-color: var(--lightest-bg-color);
+    padding: 3px;
+    border-radius: 10%;
+}
+
 .container-drawer{
     /* border-bottom: 2px solid black; */
     font-size: 3rem;
@@ -340,7 +349,7 @@ footer{
         transition: 0.5s;
         position: absolute;
         height: 80rem;
-        overflow: scroll;
+        overflow-y: scroll;
 
          /* padding: 1rem; */
         /* position: absolute; */
