@@ -1,11 +1,12 @@
 
-@import url(./Components/Alert/Alert.css);
-@import url(./Components/Avatar/Avatar.css);
-@import url(./Components/Badge/Badge.css);
-@import url(./Components/Button/button.css);
-@import url(./Components/Card/Card.css);
-@import url(./Components/Image/Image.css);
-@import url(./Components/Input/Input.css);
+@import url(../Components/Alert/Alert.css);
+@import url(../Components/Avatar/Avatar.css);
+@import url(../Components/Badge/Badge.css);
+@import url(../Components/Button/button.css);
+@import url(../Components/Card/Card.css);
+@import url(../Components/Drawer/Drawer.css);
+@import url(../Components/Image/Image.css);
+@import url(../Components/Input/Input.css);
 *{
   margin: 0;
   padding: 0;
