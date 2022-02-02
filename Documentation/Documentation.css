@@ -9,19 +9,30 @@
     margin-bottom: 2px solid white;
 }
 .navbar-body{
-    padding-left: 3rem;
+    padding: 0 2rem;
     display: flex;
+    margin-left: auto;
 }
 .navbar-body > div{
     padding:1rem;
     cursor: pointer;
 }
+
+.navbar-image{
+    height: 4rem;
+    width: 4rem;
+}
 .navbar-title{  
     font-size: 3rem;
     padding: 1rem 1.5rem;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 
+.navbar-title > div {
+    padding: 0 1rem;
+}
 .navbar-items{
     text-decoration: none;
     color: var(--boldy-dark-purple);
@@ -243,7 +254,7 @@ legend{
     flex-direction: column;
 }
 .landing-main-image{
-    flex-basis: 40rem;
+    flex-basis: 50rem;
     padding: 1rem;
     /* width: 40rem; */
 }
@@ -251,6 +262,15 @@ legend{
 .landing-installation{
     padding: 1rem 1.5rem;
     transition: 2s;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.installation-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .get-start-btn{
@@ -280,6 +300,13 @@ legend{
 }
 .landing-btn-collect{
     display: flex;
+}
+
+.installation-img{
+    width: 100%;
+    height: 40rem;
+    border-radius: 5px;
+    display: none;
 }
 
 footer{
@@ -331,5 +358,13 @@ footer{
        position: -webkit-sticky;
        position: sticky;
        top: 0;
+    }
+    .installation-img{
+        display: flex;
+    }
+    .illustartion-landpage{
+        height: 90vh;
+        width: 100%;
+        color:#539987;
     }
 }
