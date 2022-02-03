@@ -1,13 +1,11 @@
 .card{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     flex-wrap: wrap;
     width: 25rem;
     height: 30rem;
     background-color: var(--shade-1);
     margin: 7px;
-    /* border: 1px solid white; */
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     background-color: var(--lightest-bg-color);
