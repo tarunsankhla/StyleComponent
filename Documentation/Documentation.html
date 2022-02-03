@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../component.css">
+    
     <link rel="stylesheet" href="./Documentation.css">
+    <link rel="stylesheet" href="../Components/component.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <script defer src="../Components/Drawer/Drawer.js"></script>
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
@@ -37,8 +40,9 @@
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#card-container">Card  </a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#image-container">Image </a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#input-container">Input</a></li>
-             
-           
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#drawer-container">Drawer</a></li>
+
+                
             </ul>       
         </aside>
         
@@ -51,6 +55,7 @@
                 Components</div>
             <div class="document-container">
                 <div class="content">
+                    <!-- Avatar -->
                     <div id="avatar-container" class="avatar-content">
                         <fieldset>
                             <legend class="divider">Avatar</legend>
@@ -94,8 +99,9 @@
                         </div>
                     </div>
                     <!-- <a href="https://storyset.com/design">Design illustrations by Storyset</a> -->
-                    <img class="illustartion-landpage" src="../assets/fram/button-style-animate.svg">
-
+                    <img class="illustartion-docpage" src="../assets/fram/button-style-animate.svg">
+                    
+                    <!-- Badge -->
                     <div id="badge-container" class="badge-content">
                         
                         <fieldset>
@@ -161,6 +167,7 @@
                                 </iframe>
                         </div>
                     </div>
+                    <!-- Alert -->
                     <div id="alert-container">
                        
                         <fieldset>
@@ -246,6 +253,7 @@
                                 </iframe>
                         </div>
                     </div>
+                    <!-- Button -->
                     <div id="button-container">
                         <fieldset>
                             <legend class="divider">Button</legend>
@@ -304,7 +312,8 @@
                             </iframe>
                         </div>
                     </div>
-                    <img class="illustartion-landpage" src="../assets/fram/undraw_innovative_b409.svg">
+                    <img class="illustartion-docpage" src="../assets/fram/undraw_innovative_b409.svg">
+                    <!-- Image -->
                     <div id="image-container">
                         <fieldset>
                             <legend class="divider">Image</legend>
@@ -330,6 +339,7 @@
                                 </iframe>
                             </div>
                     </div>
+                    <!-- Input -->
                     <div id="input-container">
                         <fieldset>
                             <legend class="divider">Input</legend>
@@ -358,8 +368,8 @@
                                 </iframe>
                             </div>
                     </div>
-                    
-                    <img class="illustartion-landpage" src="../assets/fram/undraw_prototyping_process_re_7a6p.svg">
+                    <img class="illustartion-docpage" src="../assets/fram/undraw_prototyping_process_re_7a6p.svg">
+                    <!-- Card -->
                     <div id="card-container">
                         <fieldset>
                             <legend class="divider">Card</legend>
@@ -369,33 +379,142 @@
                                 and for content in the card generally like a product description of name of the product will be in  <span class="markup">card-content</span>
                                 and for performing action like reading of sharing or bookmarking we can perform action by adding action button in footer of card under  <span class="markup">card-footer</span>
                             </div>
-                            <div class="card">
-                                <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
-                             
-                                <div class="card-content">
-                                    <div class="card-title">
-                                        <h1>Breakfast Story</h1>
-                                        <h3>by Tarun</h3>
-                                    </div>   
-                                    <div class="card-body">
-                                        We went across globe and covered a range of first meal of the day story.
+                            <div class="card-collection">
+                                <div class="card">
+                                    <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                                
+                                    <div class="card-content">
+                                        <div class="card-title">
+                                            <h1>Breakfast Story</h1>
+                                            <h3>by Tarun</h3>
+                                        </div>   
+                                        <div class="card-body">
+                                            We went across globe and covered a range of first meal of the day story.
+                                        </div>
+                                    </div> 
+                                    <div class="card-footer">
+                                        <div class="card-footer-view">
+                                            <button>READ</button>
+                                            <button>BOOKMARK</button>
+                                        </div>
                                     </div>
-                                </div> 
-                                <div class="card-footer">
-                                    <div class="card-footer-view">
-                                        <button>READ</button>
-                                        <button>BOOKMARK</button>
-                                    </div>
-                                    <div class="card-footer-action">
-                                            <span class="material-icons-round">
-                                                favorite_border
-                                            </span>
-                                            <span class="material-icons-round">
-                                                share
+                                </div>
+                                <div class="card">
+                                    <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                                
+                                    <div class="card-content">
+                                        <div class="card-content-title">
+                                            <h1>Breakfast Story</h1>
+                                            <h3>by Tarun</h3>
+                                        </div>   
+                                        <div class="card-content-body">
+                                            We went across globe and covered a range of first meal of the day story.
+                                        </div>
+                                    </div> 
+                                    <div class="card-footer">
+                                        <div class="card-footer-action">
+                                                <span class="material-icons-round">
+                                                    favorite_border
                                                 </span>
-                                            <span class="material-icons-round">
-                                                more_vert
-                                            </span>
+                                                <span class="material-icons-round">
+                                                    share
+                                                    </span>
+                                                <span class="material-icons-round">
+                                                    more_vert
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-text-overlay">
+                                    <img class="card-img card-overlay-image" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                                
+                                    <div class="card-content">
+                                        <div class="card-content-title card-overlay-title">
+                                            <h1>Breakfast Story</h1>
+                                            <h3>by Tarun</h3>
+                                        </div>   
+                                        <div class="card-content-body">
+                                            We went across globe and covered a range of first meal of the day story.
+                                        </div>
+                                    </div> 
+                                    <div class="card-footer">
+                                        <div class="card-footer-action">
+                                                <span class="material-icons-round">
+                                                    favorite_border
+                                                </span>
+                                                <span class="material-icons-round">
+                                                    share
+                                                    </span>
+                                                <span class="material-icons-round">
+                                                    more_vert
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-header-title">
+                                    <img class="card-img card-header-title-image" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                                
+                                    <div class="card-content">
+                                        <div class="card-content-title card-header-title-content">
+                                            <h1>Breakfast Story</h1>
+                                            <h3>by Tarun</h3>
+                                        </div>   
+                                        <div class="card-content-body">
+                                            We went across globe and covered a range of first meal of the day story.
+                                        </div>
+                                    </div> 
+                                    <div class="card-footer">
+                                        <div class="card-footer-action">
+                                                <span class="material-icons-round">
+                                                    favorite_border
+                                                </span>
+                                                <span class="material-icons-round">
+                                                    share
+                                                    </span>
+                                                <span class="material-icons-round">
+                                                    more_vert
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-horizontal">
+                                    <div class="card-horizontal-layout">
+                                        <img class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
+                                    
+                                        <div class="card-content">
+                                            <div class="card-title">
+                                                <h1>Breakfast Story</h1>
+                                                <h3>by Tarun</h3>
+                                            </div>   
+                                            <div class="card-body">
+                                                We went across globe and covered a range of first meal of the day story.
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-footer-view">
+                                            <button>READ</button>
+                                            <button>BOOKMARK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-horizontal">
+                                    <div class="card-horizontal-layout">
+                                        <div class="card-content">
+                                            <div class="card-title">
+                                                <h1>Breakfast Story</h1>
+                                                <h3>by Tarun</h3>
+                                            </div>   
+                                            <div class="card-body">
+                                                We went across globe and covered a range of first meal of the day story.
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-footer-view">
+                                            <button>READ</button>
+                                            <button>BOOKMARK</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -409,6 +528,288 @@
                                 </iframe>
                             </div>
                     </div>
+                    <div id="drawer-container">
+                        <div class="divider"><h1>Drawer</h1></div>
+
+                        <div class="divider"><h3>Permanent Drawer</h3></div>
+                        <div class="__drawer_filler">
+                            <div class="__drawer-container-permanent">
+                                <div class="__drawer-container-header">
+                                    <h1>Mail</h1>
+                                    <div>email@material.io</div>
+                                </div>
+                                <div class="__drawer-container-body">
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                
+                                                <span class="material-icons-round __drawer-icons">
+                                                    inbox
+                                                    </span>
+                                                <span class="__drawer-body-item">Inbox</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    star_border
+                                                    </span>
+                                                <span class="__drawer-body-item">Star</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    send
+                                                    </span>
+                                                <span class="__drawer-body-item">Send Mail</span></li>
+                                            <li  class="__drawer-container-body-item ">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    drafts
+                                                    </span>
+                                                <span class="__drawer-body-item">Drafts</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                        
+                                        
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Family</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Friends</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Work</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                    <div class="__drawer-container-body-elements">
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    help_center
+                                                    </span>
+                                                <span class="__drawer-body-item">Settings</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    settings
+                                                    </span>
+                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__content-drawer">
+                                <div class="__content-drawer-header">Permanent Drawer</div>
+                                <div class="__content-drawer-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="divider"><h3>Dismissible Drawer</h3></div>
+                        <div class="__drawer_filler __overlay-filler __drawer-push">
+                            <div class="__drawer-container-overlay">
+                                <div class="__drawer-container-body">
+                                    <h1>Mail </h1>
+                                    <div>email@material.io</div>
+                                </div>
+                                <div class="__drawer-container-body">
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                
+                                                <span class="material-icons-round __drawer-icons">
+                                                    inbox
+                                                    </span>
+                                                <span class="__drawer-body-item">Inbox</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    star_border
+                                                    </span>
+                                                <span class="__drawer-body-item">Star</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    send
+                                                    </span>
+                                                <span class="__drawer-body-item">Send Mail</span></li>
+                                            <li  class="__drawer-container-body-item ">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    drafts
+                                                    </span>
+                                                <span class="__drawer-body-item">Drafts</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                        
+                                        
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Family</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Friends</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Work</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                    <div class="__drawer-container-body-elements">
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    help_center
+                                                    </span>
+                                                <span class="__drawer-body-item">Settings</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    settings
+                                                    </span>
+                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__content-drawer">
+                                <div class="__content-drawer-header"><span class="material-icons-round drawer-menu-icon drawer-model">
+                                    menu
+                                    </span>
+                                    
+                                    Dismissible Drawer</div>
+                                <div class="__content-drawer-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="divider"><h3>Modal Drawer</h3></div>
+                        <div class="__drawer_filler __overlay-filler ">
+                            <div class="__drawer-container-overlay __drawer-overlay">
+                                <div class="__drawer-container-body __drawer-close-modal">X</div>
+                                <div class="__drawer-container-body">
+                                    <h1>Mail </h1>
+                                    <div>email@material.io</div>
+                                </div>
+                                <div class="__drawer-container-body">
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                
+                                                <span class="material-icons-round __drawer-icons">
+                                                    inbox
+                                                    </span>
+                                                <span class="__drawer-body-item">Inbox</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    star_border
+                                                    </span>
+                                                <span class="__drawer-body-item">Star</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    send
+                                                    </span>
+                                                <span class="__drawer-body-item">Send Mail</span></li>
+                                            <li  class="__drawer-container-body-item ">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    drafts
+                                                    </span>
+                                                <span class="__drawer-body-item">Drafts</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                        
+                                        
+                                    <div class="__drawer-container-body-elements">
+                                        <label class="__drawer-container-body-label">Label</label>
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Family</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Friends</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round __drawer-icons">
+                                                    engineering
+                                                    </span>
+                                                <span class="__drawer-body-item">Work</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                    <div class="__drawer-container-body-elements">
+                                        <ul>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    help_center
+                                                    </span>
+                                                <span class="__drawer-body-item">Settings</span></li>
+                                            <li  class="__drawer-container-body-item">
+                                                <span class="material-icons-round  __drawer-icons">
+                                                    settings
+                                                    </span>
+                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                       
+                                        </ul>             
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__content-drawer">
+                                <div class="__content-drawer-header"><span class="material-icons-round drawer-menu-icon-over drawer-model-menu-over">
+                                    menu
+                                    </span>
+                                    
+                                    Modal Drawer</div>
+                                <div class="__content-drawer-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
+                    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             
             </div>
@@ -421,9 +822,6 @@
         Made with ❤ by Tarun.
     </footer>
            
-
-    <script src="../script.js"></script>
-
 
 </body>
 </html>
