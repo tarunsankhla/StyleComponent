@@ -1,14 +1,14 @@
 var drawer = document.querySelector('.drawer-model');
 var drawermodaloverlay = document.querySelector('.drawer-model-menu-over');
 
-var pushdrawer = document.querySelector('.__drawer-push');
+var pushdrawer = document.querySelector('.drawer-push');
 
-var draweroverlaycontainer = document.querySelector('.__drawer-container-overlay');
+var draweroverlaycontainer = document.querySelector('.drawer-container-overlay');
 
-var drawermodal = document.querySelector('.__drawer-overlay');
+var drawermodal = document.querySelector('.drawer-overlay');
 
-var drawerheadoverlay = document.querySelector('.__drawer-container-header');
-var drawercloseoverlay = document.querySelector('.__drawer-close-modal');
+var drawerheadoverlay = document.querySelector('.drawer-container-header');
+var drawercloseoverlay = document.querySelector('.drawer-close-modal');
 
 var push =false
 drawermodaloverlay.addEventListener('click',()=>{

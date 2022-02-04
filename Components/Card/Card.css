@@ -113,8 +113,9 @@
 /* card with header title */
 
 .card-header-title-image{
-    margin-top: 5rem;
-    border-radius:0px;
+    margin-top: 6rem;
+    border-radius: 0px;
+    height: 13rem;
 }
 
 .card-header-title-content{
