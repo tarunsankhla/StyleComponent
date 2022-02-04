@@ -17,6 +17,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <script defer src="./script.js"></script>
     <script defer src="../Components/Drawer/Drawer.js"></script>
+    <style>
+        /* https://github.com/lonekorean/gist-syntax-themes */
+        @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+        
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        body {
+          font: 16px 'Open Sans', sans-serif;
+        }
+        body .gist .gist-file {
+          border-color: #555 #555 #444
+        }
+        body .gist .gist-data {
+          border-color: #555
+        }
+        body .gist .gist-meta {
+          color: #ffffff;
+          background: #373737; 
+        }
+        body .gist .gist-meta a {
+          color: #ffffff
+        }
+        </style>
+        <script src="your-gist-embed"></script>
+    <!-- <link rel="stylesheet" href="/path/to/styles/default.min.css">
+        <script src="/path/to/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+
+        <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
+
+<link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
@@ -91,6 +126,10 @@
                                 <img  class="avatar avatar-xxlg img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
                             </div>
                         </fieldset>
+                        <!-- <div class="gist-design">
+                            <script src="https://gist.github.com/tarunsankhla/3a0088dc1bdc61765fe4a7caee50c7d0.js"></script>
+                        </div>
+                        <pre><code class="language-html">...</code></pre> -->
                         <div class="iframe-container">
                             <iframe class="iframe-body"
                             src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=one-dark&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=12px&ph=12px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=118%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-lg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Ftim-bish-WbC9XIlQb4k-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%253E%250A%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-sm%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-lg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%2520%2520%250A%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fcharles-deluvio-DziZIYOGAHc-unsplash.jpg%2522%2520alt%253D%2522%2522%2520srcset%253D%2522%2522%253E%250A%2520%250A%2520%2520%2520%253C%252Fdiv%253E"
@@ -121,13 +160,13 @@
                             <div class="content-title">Badges on Icon</div>
                             <div class="badge-collection">
                                 <div class="badge-container">
-                                    <span class="material-icons-round __drawer-icons">
+                                    <span class="material-icons-round drawer-icons">
                                         inbox
                                         </span>
                                     <div class="badge topright-badge"></div>            
                                 </div>
                                 <div class="badge-container">
-                                    <span class="material-icons-round  __drawer-icons">
+                                    <span class="material-icons-round  drawer-icons">
                                         settings
                                         </span>
                                     <div class="badge badge-sucess topright-badge"></div>            
@@ -533,83 +572,86 @@
                         <div class="divider"><h1>Drawer</h1></div>
 
                         <div class="divider"><h3>Permanent Drawer</h3></div>
-                        <div class="__drawer_filler">
-                            <div class="__drawer-container-permanent">
-                                <div class="__drawer-container-header">
+                        <div class="gist-design">
+                        <script src="https://gist.github.com/tarunsankhla/def3eec6e3a59536fcada1032e5091c6.js"></script>
+                        </div>
+                        <div class="drawer_filler">
+                            <div class="drawer-container-permanent">
+                                <div class="drawer-container-header">
                                     <h1>Mail</h1>
                                     <div>email@material.io</div>
                                 </div>
-                                <div class="__drawer-container-body">
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                <div class="drawer-container-body">
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
+                                            <li  class="drawer-container-body-item">
                                                 
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="material-icons-round drawer-icons">
                                                     inbox
                                                     </span>
-                                                <span class="__drawer-body-item">Inbox</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Inbox</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     star_border
                                                     </span>
-                                                <span class="__drawer-body-item">Star</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Star</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     send
                                                     </span>
-                                                <span class="__drawer-body-item">Send Mail</span></li>
-                                            <li  class="__drawer-container-body-item ">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Send Mail</span></li>
+                                            <li  class="drawer-container-body-item ">
+                                                <span class="material-icons-round drawer-icons">
                                                     drafts
                                                     </span>
-                                                <span class="__drawer-body-item">Drafts</span></li>
+                                                <span class="drawer-body-item">Drafts</span></li>
                                        
                                         </ul>             
                                     </div>
                                         
                                         
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Family</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Family</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Friends</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Friends</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Work</span></li>
+                                                <span class="drawer-body-item">Work</span></li>
                                        
                                         </ul>             
                                     </div>
-                                    <div class="__drawer-container-body-elements">
+                                    <div class="drawer-container-body-elements">
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     help_center
                                                     </span>
-                                                <span class="__drawer-body-item">Settings</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                                <span class="drawer-body-item">Settings</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     settings
                                                     </span>
-                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                                <span class="drawer-body-item">Help & Feedback</span></li>
                                        
                                         </ul>             
                                     </div>
                                 </div>
                             </div>
-                            <div class="__content-drawer">
-                                <div class="__content-drawer-header">Permanent Drawer</div>
-                                <div class="__content-drawer-body">
+                            <div class="content-drawer">
+                                <div class="content-drawer-header">Permanent Drawer</div>
+                                <div class="content-drawer-body">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
                     
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
@@ -621,89 +663,94 @@
                                 </div>
                             </div>
                         </div>
+
+                        
                     
                         <div class="divider"><h3>Dismissible Drawer</h3></div>
-                        <div class="__drawer_filler __overlay-filler __drawer-push">
-                            <div class="__drawer-container-overlay">
-                                <div class="__drawer-container-body">
+                        <div class="gist-design">
+                            <script src="https://gist.github.com/tarunsankhla/b6bd278ad385313c8ad68da7196f5f95.js"></script>
+                        </div>
+                        <div class="drawer_filler overlay-filler drawer-push">
+                            <div class="drawer-container-overlay">
+                                <div class="drawer-container-body">
                                     <h1>Mail </h1>
                                     <div>email@material.io</div>
                                 </div>
-                                <div class="__drawer-container-body">
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                <div class="drawer-container-body">
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
+                                            <li  class="drawer-container-body-item">
                                                 
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="material-icons-round drawer-icons">
                                                     inbox
                                                     </span>
-                                                <span class="__drawer-body-item">Inbox</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Inbox</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     star_border
                                                     </span>
-                                                <span class="__drawer-body-item">Star</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Star</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     send
                                                     </span>
-                                                <span class="__drawer-body-item">Send Mail</span></li>
-                                            <li  class="__drawer-container-body-item ">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Send Mail</span></li>
+                                            <li  class="drawer-container-body-item ">
+                                                <span class="material-icons-round drawer-icons">
                                                     drafts
                                                     </span>
-                                                <span class="__drawer-body-item">Drafts</span></li>
+                                                <span class="drawer-body-item">Drafts</span></li>
                                        
                                         </ul>             
                                     </div>
                                         
                                         
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Family</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Family</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Friends</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Friends</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Work</span></li>
+                                                <span class="drawer-body-item">Work</span></li>
                                        
                                         </ul>             
                                     </div>
-                                    <div class="__drawer-container-body-elements">
+                                    <div class="drawer-container-body-elements">
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     help_center
                                                     </span>
-                                                <span class="__drawer-body-item">Settings</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                                <span class="drawer-body-item">Settings</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     settings
                                                     </span>
-                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                                <span class="drawer-body-item">Help & Feedback</span></li>
                                        
                                         </ul>             
                                     </div>
                                 </div>
                             </div>
-                            <div class="__content-drawer">
-                                <div class="__content-drawer-header"><span class="material-icons-round drawer-menu-icon drawer-model">
+                            <div class="content-drawer">
+                                <div class="content-drawer-header"><span class="material-icons-round drawer-menu-icon drawer-model">
                                     menu
                                     </span>
                                     
                                     Dismissible Drawer</div>
-                                <div class="__content-drawer-body">
+                                <div class="content-drawer-body">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
                     
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
@@ -717,88 +764,91 @@
                         </div>
                     
                         <div class="divider"><h3>Modal Drawer</h3></div>
-                        <div class="__drawer_filler __overlay-filler ">
-                            <div class="__drawer-container-overlay __drawer-overlay">
-                                <div class="__drawer-container-body __drawer-close-modal">X</div>
-                                <div class="__drawer-container-body">
+                        <div class="gist-design">
+                            <script src="https://gist.github.com/tarunsankhla/891f4c312cfefe4b30a63edfe8dbfb7a.js"></script>
+                        </div>
+                        <div class="drawer_filler overlay-filler ">
+                            <div class="drawer-container-overlay drawer-overlay">
+                                <div class="drawer-container-body drawer-close-modal">X</div>
+                                <div class="drawer-container-body">
                                     <h1>Mail </h1>
                                     <div>email@material.io</div>
                                 </div>
-                                <div class="__drawer-container-body">
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                <div class="drawer-container-body">
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
+                                            <li  class="drawer-container-body-item">
                                                 
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="material-icons-round drawer-icons">
                                                     inbox
                                                     </span>
-                                                <span class="__drawer-body-item">Inbox</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Inbox</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     star_border
                                                     </span>
-                                                <span class="__drawer-body-item">Star</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Star</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     send
                                                     </span>
-                                                <span class="__drawer-body-item">Send Mail</span></li>
-                                            <li  class="__drawer-container-body-item ">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Send Mail</span></li>
+                                            <li  class="drawer-container-body-item ">
+                                                <span class="material-icons-round drawer-icons">
                                                     drafts
                                                     </span>
-                                                <span class="__drawer-body-item">Drafts</span></li>
+                                                <span class="drawer-body-item">Drafts</span></li>
                                        
                                         </ul>             
                                     </div>
                                         
                                         
-                                    <div class="__drawer-container-body-elements">
-                                        <label class="__drawer-container-body-label">Label</label>
+                                    <div class="drawer-container-body-elements">
+                                        <label class="drawer-container-body-label">Label</label>
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Family</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Family</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Friends</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round __drawer-icons">
+                                                <span class="drawer-body-item">Friends</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round drawer-icons">
                                                     engineering
                                                     </span>
-                                                <span class="__drawer-body-item">Work</span></li>
+                                                <span class="drawer-body-item">Work</span></li>
                                        
                                         </ul>             
                                     </div>
-                                    <div class="__drawer-container-body-elements">
+                                    <div class="drawer-container-body-elements">
                                         <ul>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     help_center
                                                     </span>
-                                                <span class="__drawer-body-item">Settings</span></li>
-                                            <li  class="__drawer-container-body-item">
-                                                <span class="material-icons-round  __drawer-icons">
+                                                <span class="drawer-body-item">Settings</span></li>
+                                            <li  class="drawer-container-body-item">
+                                                <span class="material-icons-round  drawer-icons">
                                                     settings
                                                     </span>
-                                                <span class="__drawer-body-item">Help & Feedback</span></li>
+                                                <span class="drawer-body-item">Help & Feedback</span></li>
                                        
                                         </ul>             
                                     </div>
                                 </div>
                             </div>
-                            <div class="__content-drawer">
-                                <div class="__content-drawer-header"><span class="material-icons-round drawer-menu-icon-over drawer-model-menu-over">
+                            <div class="content-drawer">
+                                <div class="content-drawer-header"><span class="material-icons-round drawer-menu-icon-over drawer-model-menu-over">
                                     menu
                                     </span>
                                     
                                     Modal Drawer</div>
-                                <div class="__content-drawer-body">
+                                <div class="content-drawer-body">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
                     
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/> <br/> <br/>
@@ -817,7 +867,8 @@
         </section>
 
         <button id="scroll-top-btn" class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">expand_less</span></button>
-
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad()</script>
     </div>
     <footer>
         Made with ❤ by Tarun.

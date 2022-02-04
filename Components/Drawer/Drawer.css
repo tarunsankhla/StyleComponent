@@ -1,4 +1,4 @@
-.__drawer_filler{
+.drawer_filler{
     height: 50rem;
     width: 80%;
     /* padding: 1rem; */
@@ -8,7 +8,7 @@
     display: flex;
 }
 
-.__content-drawer-body{
+.content-drawer-body{
     /* overflow: scroll; */
     overflow-y: scroll;
     font-size: 1.5rem;
@@ -17,7 +17,7 @@
     padding: 1rem;
 }
 
-.__content-drawer-header{
+.content-drawer-header{
     font-size: 2rem;
     background-color: var(--hover-color);
     color: var(--text-color);
@@ -32,7 +32,7 @@
 .drawer-menu-icon-over{
     padding: 1rem;
 }
-.__drawer-container-permanent{
+.drawer-container-permanent{
     flex-grow: 1;
     border-right: 1px solid black;
     /* padding: 1rem; */
@@ -42,11 +42,11 @@
     border-top: 2px solid black;
 }
 
-.__overlay-filler{
+.overlay-filler{
     position: relative;
 }
 
-.__drawer-container-overlay{
+.drawer-container-overlay{
     /* flex-grow: 1; */
     border-right: 1px solid black;
     /* padding: 1rem; */
@@ -65,11 +65,11 @@
     transition: 0.5s;
     /* padding-top: 60px; */
 }
-.__drawer-overlay{
+.drawer-overlay{
     position: absolute;
 }
 
-.__drawer-close-modal{
+.drawer-close-modal{
     margin-left: auto;
     text-align: right;
     font-weight: 800;
@@ -78,7 +78,7 @@
     overflow: none;
     font-size: 2rem;
 }
-.__drawer-container-push{
+.drawer-container-push{
     flex-grow: 1;
     border-right: 1px solid black;
     /* padding: 1rem; */
@@ -88,31 +88,31 @@
     border-top: 2px solid black;
 }
 
-.__drawer-container-body-label{
+.drawer-container-body-label{
     font-size: 1.5rem;
     margin: 1rem 0;
 }
-.__drawer-container-body-elements{
+.drawer-container-body-elements{
         font-size: 1.5rem;
         padding: 0.5rem;
         font-weight: 600;
         border-top: 2px solid black;
 }
-.__drawer-container-body-item{
+.drawer-container-body-item{
     display: block;
     padding: 7px 0;
    display: flex;
 }
 /* 
-.__drawer-container-body + h1, h3{
+.drawer-container-body + h1, h3{
     padding: 1rem;
 } */
 
-.__drawer-container-body-item:hover{
+.drawer-container-body-item:hover{
     background-color: var(--light-bg-color);
     color: var(--btn-text-color);
 }
-.__drawer-body-item{
+.drawer-body-item{
     /* justify-content: center;
     text-align: center;
     align-items: center;
@@ -125,23 +125,23 @@
     flex-grow: 1;
 }
 
-.__drawer-container-body{
+.drawer-container-body{
     overflow-y: scroll;
     /* min-width: 16rem; */
     max-height: 40rem;
 
 }
-.__drawer-container-body > .__drawer-container-body-elements
+.drawer-container-body > .drawer-container-body-elements
 {padding: 1rem;}
 
-.__drawer-icons{
+.drawer-icons{
     /* padding: 0.5rem; */
     margin: 0 auto;
 
 }
 
 
-.__drawer-container-header{
+.drawer-container-header{
     padding: 1rem 0;
     width: 0;
 }
