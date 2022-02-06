@@ -9,6 +9,7 @@
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     background-color: var(--lightest-bg-color);
+    position: relative;
 }
 
 .card-img{
@@ -160,4 +161,97 @@
     padding: 1rem;
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+
+
+/* card with cart badge */
+.card > .badge{
+    height: fit-content;
+    width: fit-content;
+    border: none;
+}
+
+.card > .badge:hover{
+    transform: scale(1.1);
+    background-color: var(--pleasent-warning);
+    color: red;
+}
+
+.card > .topright-badge{
+    top:1rem;
+    right: 1rem;
+}
+
+.cart-card{
+    height: 38rem;
+    border-radius: 0;
+}
+
+.cart-card > .card-img{
+    height: 23rem;
+    border-radius: 0;
+}
+
+.cart-card > .card-content {
+    height: 25%;
+    width: 100%;
+    align-items: center;
+}
+
+
+.cart-card  > .card-footer > .card-footer-view{
+    width: 100%;
+    background-color: #c6c6c6;
+    /* padding: 1rem; */
+}
+
+.cart-card > .card-footer > .card-footer-view:hover{
+ background: #3B82F6;
+
+}
+
+.cart-card > .card-footer > .card-footer-view > button{
+    width: 100%;
+}
+.cart-card > .card-footer > .card-footer-view > button:hover{
+    background: transparent;
+    color: white;
+   }
+
+   /*  horizontal cart card*/
+.cart-card-horizontal{
+    height: 25rem;
+    width: fit-content;
+}
+.cart-card-horizontal > .card-img{
+    width: 20rem;
+    height: 25rem;
+}
+
+.cart-card-horizontal-layout{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cart-card-footer{
+    flex-direction: column;
+    flex-grow: 0;
+    padding: 1rem;
+}
+
+.cart-card-footer > button:first-child{
+    padding: 1rem;
+    background-color:  var(--primary-variant-color);
+    color: white;
+    margin: 1rem 0; 
+}
+
+.cart-card-footer > button:last-child
+{
+    padding: 1rem;
+    color: var(--primary-variant-color);
+    border: 2px solid var(--primary-variant-color);
+    
 }

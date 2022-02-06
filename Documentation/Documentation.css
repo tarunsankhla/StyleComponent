@@ -282,6 +282,10 @@ legend{
     height: 50rem;
     overflow: scroll
 }
+
+.shorter-gist-design{
+    height: 25rem;
+}
 /* 
 .landing-main-image >.illustartion-landpage{
     height: 30rem;
