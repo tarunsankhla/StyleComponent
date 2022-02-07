@@ -6,3 +6,30 @@
     width: 100%;
     height: auto;
 }
+
+.img-slide{
+    height: 15rem;
+    width: 22rem;
+    padding:1rem;
+}
+
+
+.list-img-slider{
+    display: block;
+    position: relative;
+    width: fit-content;
+}
+
+.overlay-img-slider{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    background-color: white;
+    /* width: 100%; */
+    z-index: 9999;
+    left: 0;
+    width: -webkit-fill-available;
+    justify-content: center;
+    display: flex;
+
+}
