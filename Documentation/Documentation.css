@@ -250,6 +250,11 @@ legend{
     flex-wrap: wrap;
 }
 
+.dialog-bunch{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Landing page */
 
 .illustartion-landpage{

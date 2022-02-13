@@ -8,6 +8,7 @@
 @import url(../Components/Image/Image.css);
 @import url(../Components/Input/Input.css);
 @import url(../Components/Typography/typography.css);
+@import url(../Components/Dialog/Dialog.css);
 *{
   margin: 0;
   padding: 0;

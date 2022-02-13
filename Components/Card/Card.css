@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 25rem;
-    height: 30rem;
+    height: fit-content;
     background-color: var(--shade-1);
     margin: 7px;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
@@ -63,12 +63,11 @@
 
 .card-footer-view *{
     border: none;
-    padding: 3px;
     justify-content: center;
     cursor: pointer;
     border-radius: 5px;
-    margin:0 0.3rem;
-    padding: 2px;
+    /* margin:0 0.3rem; */
+    padding: 1rem;
     font-weight: 700;
     background-color: transparent;
 }
@@ -77,6 +76,10 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
+}
+
+.card-footer-action > span,button{
+    padding: 1rem;
 }
 
 .card-footer-action > span:hover{
@@ -138,7 +141,7 @@
 
 /* vertical card */
 .card-horizontal{
-    height: 15rem;
+    height: fit-content;
     width:30rem;
 }
 
@@ -159,8 +162,7 @@
 
 .card-horizontal > .card-footer{
     padding: 1rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;    
 }
 
 
@@ -213,6 +215,7 @@
 
 .cart-card > .card-footer > .card-footer-view > button{
     width: 100%;
+    padding: 1rem;
 }
 .cart-card > .card-footer > .card-footer-view > button:hover{
     background: transparent;
