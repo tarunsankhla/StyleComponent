@@ -9,6 +9,11 @@
 @import url(../Components/Input/Input.css);
 @import url(../Components/Typography/typography.css);
 @import url(../Components/Dialog/Dialog.css);
+@import url(../Components/Navigation/Navigation.css);
+@import url(../Components//Grid//Grid.css);
+@import url(../Components/Utilites/Utilities.css);
+@import url(../Components/Toast/Toast.css);
+@import url(../Components/Rating/Rating.css);
 *{
   margin: 0;
   padding: 0;
@@ -62,7 +67,7 @@ body{
   --dark-theme-border-bg:#4d887b;
   --dark-theme-nav-text:#4d887b;
 
-
+  --shade-0:#efefef;
   --shade-1:#f0fdfa;
   --shade-2:#ccfbf1;
   --shade-3:#99f6e4;
@@ -73,6 +78,7 @@ body{
   --shade-8:#0f766e;
   --shade-9:#115e59;
   --shade-10:#134e4a;
+
   --border-radius: 5px;
 }
 

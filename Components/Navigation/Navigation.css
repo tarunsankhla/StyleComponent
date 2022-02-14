@@ -1,0 +1,60 @@
+.nav-bunch{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-dummy-bunch{
+    /* height: 30rem; */
+    width: 45%;
+    /* padding: 1rem; */
+    
+    
+    position: relative;
+    margin: 1rem;
+}
+.nav-header{
+    /* height: 4rem; */
+    background-color: var(--hover-color);
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-dummy-content{
+    height: 20rem;
+    overflow: scroll;
+    font-size: 1.5rem;
+    
+    scroll-behavior: smooth;
+}
+
+.navbar-body{
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.navbar-items{
+    display: block;
+    padding: 6px;
+}
+
+.navgationbar-title{
+    padding: 6px;
+    flex-grow: 1;
+    font-weight: 800;
+}
+
+.navbar-toggle-icon {
+    padding: 6px;
+}
+
+.navbar-fixed{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navar-collpased{
+    position: absolute;
+}
+

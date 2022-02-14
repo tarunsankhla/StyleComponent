@@ -1,11 +1,11 @@
-.__dialog-bunch{
+.dialog-bunch{
     
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.__dialog {
+.dialog {
     display: flex;
     flex-flow: column;
     /* position: fixed; */
@@ -24,37 +24,37 @@
     /* display: none; */
 }
 
-.__alert-dialog{
+.alert-dialog{
     height: 15rem;
 }
 
-.__dailog-header{
+.dailog-header{
     padding: 1rem;
     font-weight: 800;
 }
 
-.__dailog-body {
+.dailog-body {
     font-weight: 600;
     font-size: 1.5rem;
     padding: 1rem;
     /* max-height: 15rem;
     overflow:; */
 }
-.__confirmation-body{
+.confirmation-body{
     max-height: 15rem;
     overflow-y:scroll;
 }
-.__dailog-body li{
+.dailog-body li{
     /* padding: 5px; */
     display: flex;
     flex-flow: row;
     align-items: center;justify-content: center;
 }
 
-.__dailog-body span{
+.dailog-body span{
     background-color: transparent;
 }
-.__dialog-body-item{
+.dialog-body-item{
     padding: 7px;
    /* display: flex; */
    /* width: 80%; */
@@ -65,11 +65,11 @@
 }
 
 
-.__dailog-footer{
+.dailog-footer{
     display: flex;
     padding: 0.5rem;
 }
-.__dailog-footer button{
+.dailog-footer button{
     margin: 0.3rem;
     padding: 1rem 0;
     flex-grow: 1;
@@ -81,21 +81,21 @@
     font-weight: 600;
 }
 
-.__dailog-footer button:hover{
+.dailog-footer button:hover{
     background-color: var(--hover-color);
     border:none;
 }
 
-.__dialog-simple >.__dailog-footer{
+.dialog-simple >.dailog-footer{
     display: none;
 }
 
-.__dialog-simple >.__dailog-body{
+.dialog-simple >.dailog-body{
     height: 80%;
    
 }
 
-.__dialog-simple >.__dailog-body li{
+.dialog-simple >.dailog-body li{
     display: block;
     padding: 1rem;
 }

@@ -7,19 +7,19 @@
     
     <link rel="stylesheet" href="./Documentation.css">
     <link rel="stylesheet" href="../Components/component.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <script defer src="./script.js"></script>
     <script defer src="../Components/Drawer/Drawer.js"></script>
     <style>
         /* https://github.com/lonekorean/gist-syntax-themes */
-        @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+        /* @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
         
         @import url('https://fonts.googleapis.com/css?family=Open+Sans');
         body {
@@ -37,9 +37,9 @@
         }
         body .gist .gist-meta a {
           color: #ffffff
-        }
+        } */
         </style>
-        <script src="your-gist-embed"></script>
+        <!-- <script src="your-gist-embed"></script> -->
     <!-- <link rel="stylesheet" href="/path/to/styles/default.min.css">
         <script src="/path/to/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
@@ -47,11 +47,11 @@
         <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
-
+<!-- 
 <link rel="stylesheet"
         href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" /> -->
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
@@ -79,7 +79,12 @@
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#drawer-container">Drawer</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#typography-container">Typography</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#grid-container">Grid</a></li>
-              
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#navigation-container">Navigation</a></li>
+               
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#toast-container">Toast</a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#rating-container">Rating</a></li>
+
+      
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#dialog-container">Dialog</a></li>
                 
             </ul>       
@@ -129,9 +134,9 @@
                                 <img loading="lazy"  class="avatar avatar-xxlg img-square" src="../assets/Img/charles-deluvio-DziZIYOGAHc-unsplash.jpg" alt="" srcset="">
                             </div>
                         </fieldset>
-                       <div class="gist-design">
+                       <!-- <div class="gist-design">
                         <script src="https://gist.github.com/tarunsankhla/45bc485bb7565e6bd74122870c14b7b5.js"></script>
-                          </div>
+                          </div> -->
                          <!-- <pre><code class="language-html">...</code></pre> -->
                         <!-- <div class="iframe-container">
                             <iframe class="iframe-body"
@@ -202,9 +207,9 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                             <script src="https://gist.github.com/tarunsankhla/07dee7b144bc77422a3b4c5cf062101c.js"></script>
-                            </div>
+                            </div> -->
                         <!-- <div class="iframe-container">
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2520__drawer-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520inbox%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520topright-badge%2522%253E%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-round%2520%2520__drawer-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520settings%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sucess%2520topright-badge%2522%253E%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520%2520class%253D%2522avatar%2520avatar-xxlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Frobert-bagramov-vZWqy-Y5kTI-unsplash.jpg%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-warning%2520topright-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xlg%2520img-square%2522%2520src%253D%2522..%252Fassets%252FImg%252Fpablo-merchan-montes-MXovqM130UI-unsplash.jpg%2522%2520%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sucess%2520topleft-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xlg%2520img-round%2522%2520src%253D%2522..%252Fassets%252FImg%252Fchristine-siracusa-vzX2rgUbQXM-unsplash.jpg%2522%2520%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EHello%21%2520this%2520is%2520component%2520Libaray%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-lg%2520badge-primary%2520topright-badge%2522%253E99%252B%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522example-button%2522%253E%2520Am%2520I%2520a%2520Button%2520%253F%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-md%2520badge-primary%2520topright-badge%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
@@ -291,9 +296,9 @@
                                 This is a warning alert- Check it out!
                             </div>       
                         </fieldset>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                             <script src="https://gist.github.com/tarunsankhla/868b2456366119886d012fb3ddb1007b.js"></script>
-                        </div>
+                        </div> -->
                         <!-- <div class="iframe-container">
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-outline-primary%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253Ethumb_up%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520primary%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-danger%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253Enotification_important%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520Danger%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-sucess%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520verified%2520%253C%252Fspan%253E%250A%2509%2520This%2520is%2520a%2520sucess%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-outline-warning%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520new_releases%2520%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520thumb_up%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520primary%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520notification_important%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520Danger%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-sucess%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520verified%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520sucess%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%2520%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520new_releases%2520%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert-%2520Check%2520it%2520out%21%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520"
@@ -353,9 +358,9 @@
                                 <button class="btn btn-sm">Button small</button>
                             </div>
                         </fieldset>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                             <script src="https://gist.github.com/tarunsankhla/682c2c9607f4922841527800e7a1c5cf.js"></script>
-                        </div>
+                        </div> -->
                         <!-- <div class="iframe-container">
                             <iframe
                             src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253E%2520book%2520%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_forever%253C%252Fspan%253EDelete%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Esave_as%253C%252Fspan%253EEdit%253C%252Fbutton%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-sucess%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Ebook%253C%252Fspan%253ESave%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Edelete_sweep%253C%252Fspan%253ERemove%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Epin_drop%2520%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eexpand_less%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-icon%2520btn-round%2522%253E%253Cspan%2520class%253D%2522material-icons-round%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%250A%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EHelp%253F%253C%252Fbutton%253E%250A%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-lg%2522%253EButton%2520large%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-sm%2522%253EButton%2520small%253C%252Fbutton%253E"
@@ -386,9 +391,9 @@
                                     <span class="overlay-img-slider">spicy</span>
                                 </div>
                             </fieldset>
-                            <div class="gist-design shorter-gist-design">
+                            <!-- <div class="gist-design shorter-gist-design">
                                 <script src="https://gist.github.com/tarunsankhla/cac2bafa4467fe80299824b50b26573f.js"></script>
-                            </div>
+                            </div> -->
                             <!-- <div class="iframe-container">
                                 <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Fr-du-plessis-SGJzNs1ak6s-unsplash.jpg%2522%2520style%253D%2522width%253A%252030rem%253B%2520height%253A%252030rem%253B%2522%2520class%253D%2522image-round%2522%2520alt%253D%2522round%2520image%2522%253E%250A%253Cimg%2520src%253D%2522..%252Fassets%252FImg%252Falexander-schimmeck-R5IxlpyynrI-unsplash.jpg%2522%2520class%253D%2522image-responsive%2522%2520alt%253D%2522responsive%2520image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
@@ -426,9 +431,9 @@
                                 </div>
                             </div>
                             </fieldset>
-                            <div class="gist-design shorter-gist-design">
+                            <!-- <div class="gist-design shorter-gist-design">
                                 <script src="https://gist.github.com/tarunsankhla/9f88c697fd0977b4120c54a5ea044eee.js"></script>
-                            </div>
+                            </div> -->
                             <!-- <div class="iframe-container">
                                 <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=nord&wt=none&l=auto&width=680&ds=true&dsyoff=39px&dsblur=68px&wc=true&wa=true&pv=12px&ph=11px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=158%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-group%2520input-error%2522%253E%2520%2520%2520%253Clabel%253EName%253C%252Flabel%253E%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%253EName%2520cannot%2520contain%2520number%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
@@ -607,7 +612,7 @@
                                         favorite_border
                                         </span>
                                 </div>
-                                <div class="card cart-card cart-card-horizontal">
+                                <div class="card cart-card cart-card-horizontal fit-content">
                                     <img loading="lazy" class="card-img" src="../assets/Img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Food Image" srcset=""/>
                                     <div class="cart-card-horizontal-layout">
                                         <div class="card-content">
@@ -628,9 +633,9 @@
                                 </div>
                             </div>
                             </fieldset>
-                            <div class="gist-design">
+                            <!-- <div class="gist-design">
                                 <script src="https://gist.github.com/tarunsankhla/48642c1a9de7a57aed3cf6913e2b1f54.js"></script>
-                            </div>
+                            </div> -->
                             <!-- <div class="iframe-container">
 
                                 <iframe
@@ -645,9 +650,9 @@
                         <div class="divider"><h5>Drawer</h5></div>
 
                         <div class="divider"><h3>Permanent Drawer</h3></div>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                         <script src="https://gist.github.com/tarunsankhla/def3eec6e3a59536fcada1032e5091c6.js"></script>
-                        </div>
+                        </div> -->
                         <div class="drawer_filler">
                             <div class="drawer-container-permanent">
                                 <div class="drawer-container-header">
@@ -740,9 +745,9 @@
                         
                     
                         <div class="divider"><h3>Dismissible Drawer</h3></div>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                             <script src="https://gist.github.com/tarunsankhla/b6bd278ad385313c8ad68da7196f5f95.js"></script>
-                        </div>
+                        </div> -->
                         <div class="drawer_filler overlay-filler drawer-push">
                             <div class="drawer-container-overlay">
                                 <div class="drawer-container-body">
@@ -837,9 +842,9 @@
                         </div>
                     
                         <div class="divider"><h3>Modal Drawer</h3></div>
-                        <div class="gist-design">
+                        <!-- <div class="gist-design">
                             <script src="https://gist.github.com/tarunsankhla/891f4c312cfefe4b30a63edfe8dbfb7a.js"></script>
-                        </div>
+                        </div> -->
                         <div class="drawer_filler overlay-filler ">
                             <div class="drawer-container-overlay drawer-overlay">
                                 <div class="drawer-container-body drawer-close-modal">X</div>
@@ -966,64 +971,64 @@
                         <fieldset>
                             <Legend>Dialog</Legend>
                             <div class="dialog-bunch">
-                                <div class="__dialog __alert-dialog">
-                                    <h3 class="__dailog-header">Dialog header</h3>
-                                    <div class="__dailog-body">
+                                <div class="dialog alert-dialog">
+                                    <h3 class="dailog-header">Dialog header</h3>
+                                    <div class="dailog-body">
                                         Dialog body text
                                     </div>
-                                    <div class="__dailog-footer">
+                                    <div class="dailog-footer">
                                         <button  onclick="Alert();">ACTION 1</button>
                                         <button  onclick="Alert();">ACTION 2</button>
                                     </div>
                                 </div>
                         
-                                <div class="__dialog __dialog-simple">
-                                    <h3 class="__dailog-header">Dialog header</h3>
-                                    <div class="__dailog-body">
+                                <div class="dialog dialog-simple">
+                                    <h3 class="dailog-header">Dialog header</h3>
+                                    <div class="dailog-body">
                                         <ul>
                                             <li><span class="material-icons-round">
                                                 engineering
                                                 </span>
                                                 
-                                                <span class="__dialog-body-item">item 1</span></li>
+                                                <span class="dialog-body-item">item 1</span></li>
                                             <li><span class="material-icons-round">
                                                 engineering
                                                 </span>
                                                 
-                                                <span class="__dialog-body-item">item 1</span></li>
+                                                <span class="dialog-body-item">item 1</span></li>
                                             <li><span class="material-icons-round">
                                                 engineering
                                                 </span>
                                                 
-                                                <span class="__dialog-body-item">item 1</span></li>
+                                                <span class="dialog-body-item">item 1</span></li>
                                         </ul>
                                     </div>
-                                    <div class="__dailog-footer">
+                                    <div class="dailog-footer">
                                         <button>ACTION 1</button>
                                         <button>ACTION 2</button>
                                     </div>
                                 </div>
                         
-                                <div class="__dialog">
-                                    <h3 class="__dailog-header">Dialog header</h3>
-                                    <div class="__dailog-body __confirmation-body">
+                                <div class="dialog">
+                                    <h3 class="dailog-header">Dialog header</h3>
+                                    <div class="dailog-body confirmation-body">
                                             <ul>
                                                 <li><input type="radio" id="html" name="fav_language" value="HTML">
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                                 <li>
                                                     <input type="radio" id="html" name="fav_language" value="HTML">
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                                 <li><input type="radio" id="html" name="fav_language" value="HTML">
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                                 <li><input type="radio" id="html" name="fav_language" value="HTML">                        
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                                 <li><input type="radio" id="html" name="fav_language" value="HTML">
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                                 <li><input type="radio" id="html" name="fav_language" value="HTML">
-                                                    <span class="__dialog-body-item">item 1</span></li>
+                                                    <span class="dialog-body-item">item 1</span></li>
                                             </ul>
                                     </div>
-                                    <div class="__dailog-footer">
+                                    <div class="dailog-footer">
                                         <button onclick="Confirmation()">ACTION 1</button>
                                         <button onclick="Confirmation()">ACTION 2</button>
                                     </div>
@@ -1033,13 +1038,276 @@
                     </div>
 
                     <!-- Grid -->
-                    <div id="dialog-container">
+                    <div id="grid-container">
                         <fieldset>
-                            <Legend>Dialog</Legend>
-                            <div class="dialog-bunch">
-                               
+                            <Legend>Grid</Legend>
+                            <div class="grid-bunch">
+                                <div class="grid grid-2-items">
+                                    <div class="card padding-md fit-content">Grid Item 1</div>
+                                    <div class="card padding-md fit-content">Grid Item 2</div>
+                                </div>
+                                <div class="grid grid-3-items">
+                                    <div class="card padding-md fit-content">Grid Item 1</div>
+                                    <div class="card padding-md fit-content">Grid Item 2</div>
+                                    <div class="card padding-md fit-content">Grid Item 3</div>
+                                </div>
                             </div>
                     </fieldset>
+                    </div>
+                    <!-- Navigation -->
+                    <script defer src="../Components/Navigation/Navigation.js"></script>
+                    <div id="navigation-container">
+                        <fieldset>
+                            <legend>Navigation</legend>
+                            
+                            <div class="nav-bunch">
+                                <div class="nav-dummy-bunch">
+                                    
+                                    <div class="nav-dummy-content">
+                                        <div class="nav-header">
+                                            <span class="material-icons-round navbar-toggle-icon">
+                                                menu
+                                                </span>
+                                            <div class="navgationbar-title">Standard</div>
+                                            <ul class="navbar-body">
+                                                <li  class="navbar-items">
+                                                    
+                                                    <span class="material-icons-round ">
+                                                        inbox
+                                                        </span></li>
+                                                <li  class="navbar-items">
+                                                    <span class="material-icons-round ">
+                                                        star_border
+                                                        </span></li>
+                                                <li  class="navbar-items">
+                                                    <span class="material-icons-round">
+                                                        drafts
+                                                        </span></li>
+                                        
+                                            </ul>      
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+
+                                <div class="nav-dummy-bunch">
+                                    
+                                    <div class="nav-dummy-content">
+                                        <div class="nav-header navbar-fixed">
+                                            <span class="material-icons-round navbar-toggle-icon">
+                                                menu
+                                                </span>
+                                            <div class="navgationbar-title">Fixed</div>
+                                            <ul class="navbar-body">
+                                                <li  class="navbar-items">
+                                                    
+                                                    <span class="material-icons-round ">
+                                                        inbox
+                                                        </span></li>
+                                                <li  class="navbar-items">
+                                                    <span class="material-icons-round ">
+                                                        star_border
+                                                        </span></li>
+                                                <li  class="navbar-items">
+                                                    <span class="material-icons-round">
+                                                        drafts
+                                                        </span></li>
+                                        
+                                            </ul>      
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+
+                                <!-- always collapse -->
+                                <div class="nav-dummy-bunch">
+                                    
+                                    <div class="nav-dummy-content">
+                                        <div class="nav-header navar-collpased">
+                                            <span class="material-icons-round navbar-toggle-icon">
+                                                menu
+                                                </span>
+                                            <ul class="navbar-body">
+                                                <li  class="navbar-items">
+                                                    
+                                                    <span class="material-icons-round ">
+                                                        inbox
+                                                        </span></li>
+                                        
+                                            </ul>      
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+
+                                <div class="nav-dummy-bunch">
+                                    
+                                    <div class="nav-dummy-content navbar-scroll-tracker" onscroll="scroller()">
+                                        <div class="nav-header navbar-short-collapse">
+                                            <span class="material-icons-round navbar-toggle-icon">
+                                                menu
+                                                </span>
+                                            <div class="navgationbar-title">Short</div>
+                                            <ul class="navbar-body">
+                                            
+                                                <li  class="navbar-items">
+                                                    <span class="material-icons-round ">
+                                                        star_border
+                                                        </span></li>
+                                        
+                                            </ul>      
+                                        </div>
+                                        <div class="navbar-track">Lorem</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <!-- Toast -->
+                    <div id="toast-container">
+                        <fieldset>
+                            <legend>Toast</legend>
+                            <div class="toast-bunch">
+                                <div class="toast">
+                                    <span class="material-icons-round">
+                                        notifications_active
+                                        </span>
+                                        <h4> Updated SuccessFully!</h4>
+                                </div>
+                                <div class="toast toast-warning">
+                                    <span class="material-icons-round">
+                                        notifications_active
+                                        </span>
+                                        <h4> Failed to Update!</h4>
+                                </div>
+                               
+                                <div class="toast toast_stacked">
+                                    <div class="toast-header">
+                                        <h4>Kernal Notification</h4>
+                                        <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                    </div>
+                                    <div class="toast-container">
+                                        The latest upgrade is available, Install it from firmware upgrade in settings.
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- Rating -->
+                    <div id="rating-container">
+                        <fieldset>
+                            <legend>Rating</legend>
+                            <div class="rating-bunch">
+                                <div class="page">
+                                    <div class="page__demo">
+                                      <div class="page__group">
+                                        <div class="rating">
+                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+                                          <label for="rc1" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">1</span>
+                                          </label>
+                                          <label for="rc2" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">2</span>
+                                          </label>
+                                          <label for="rc3" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">3</span>
+                                          </label>
+                                          <label for="rc4" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">4</span>
+                                          </label>
+                                          <label for="rc5" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">5</span>
+                                          </label>	
+                                        </div>
+                                        <span class="page__hint">unselected state</span>
+                                      </div>
+                                      <div class="page__group">  
+                                        <div class="rating">
+                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc6">
+                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc7">
+                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc8" checked>
+                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc9">
+                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc10">
+                                          <label for="rc6" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">1</span>
+                                          </label>
+                                          <label for="rc7" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">2</span>
+                                          </label>
+                                          <label for="rc8" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">3</span>
+                                          </label>
+                                          <label for="rc9" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">4</span>
+                                          </label>
+                                          <label for="rc10" class="rating__item">
+                                            <svg class="rating__star">
+                                              <use xlink:href="#star"></use>
+                                            </svg>
+                                            <span class="screen-reader">5</span>
+                                          </label>	
+                                        </div>    
+                                        <span class="page__hint">selected state</span>  
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                    <symbol id="star" viewBox="0 0 26 28">
+                                      <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+                                    </symbol>
+                                  </svg>
+                                  
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
             
@@ -1047,8 +1315,8 @@
         </section>
 
         <button id="scroll-top-btn" class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">expand_less</span></button>
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad()</script>
+        <!-- <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad()</script> -->
     </div>
     <footer>
         Made with ❤ by Tarun.
