@@ -1,5 +1,5 @@
 // export {logavatar}from "./Components/Avatar/avatar"; 
-var drawer = document.querySelector('.drawer-model-menu');
+var aside_main_drawer = document.querySelector('.drawer-model-menu');
 var container = document.querySelector('.document-container');
 var nav_hider = document.querySelector('.hide-nav');
 var nav_toggler = document.querySelector('.navbar-togglers');
@@ -13,9 +13,11 @@ console.log(document.body.clientWidth);
 // jQuery(document).ready(function($) {
 alterClass();
 function alterClass(){
+    console.log("alter called")
     if(document.body.clientWidth <= 800){
         console.log("a",document.body.clientWidth);
-        drawer.classList.add('hide-nav');
+        aside_main_drawer.classList.add('hide-nav');
+        console.log(aside_main_drawer,nav_hider)
         nav_closer.style.display ="block";
         document.querySelector('.hide-nav').style.visibility ="hidden";
         
@@ -32,9 +34,10 @@ function alterClass(){
         nav_closer.style.display ="none";
         document.querySelector('.container-drawer').style.visibility ="hidden";
         document.querySelector('.container-drawer').style.height = '1px'
+        // aside_main_drawer.classList.remove('hide-nav')
         if(document.querySelector('.hide-nav')){
-        document.querySelector('.hide-nav').style.visibility ="visible";
-        drawer.classList.remove('hide-nav')
+            document.querySelector('.hide-nav').style.visibility ="visible";
+            aside_main_drawer.classList.remove('hide-nav')
         }
 
     }

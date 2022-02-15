@@ -39,3 +39,29 @@
     width: fit-content;
     height: fit-content;
 }
+
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-wrapper *{
+    flex-grow: 1;
+}
+
+.gap-sm{
+    gap:1rem
+}
+.gap-md{
+    gap:1rem
+}
+
+.gap-lg{
+    gap:1rem
+}
+
+.no-grp{
+    gap: 0;
+}

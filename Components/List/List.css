@@ -1,0 +1,50 @@
+.list-body-item{
+    display: block;
+    padding: 7px 0;
+   display: flex;
+   
+}
+.list-body-item:hover{
+    background-color: var(--light-bg-color);
+    color: var(--btn-text-color);
+}
+.list-body-item {
+    padding: 0 1rem;
+    font-weight: 600;
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-bottom: auto;
+    /* flex-grow: 1; */
+}
+
+.list-body-item .material-icons-round{
+margin: auto 0;
+}
+
+.list-bullet{
+    display: list-item;
+    padding: 0;
+}
+
+.list-bullet .list-body-item{
+    padding: 0;
+}
+
+.list-bullet-square{
+    list-style-type: square;
+}
+
+.list-bullet-circle{
+    list-style-type: circle;
+}
+
+.list-bullet-number{
+    list-style-type: decimal;
+}
+
+.list-bullet-arrowdown{
+    list-style-type: disclosure-open;
+}
+.list-bullet-arrowdown::marker{
+    color: red;
+}

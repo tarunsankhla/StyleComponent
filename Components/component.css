@@ -11,9 +11,11 @@
 @import url(../Components/Dialog/Dialog.css);
 @import url(../Components/Navigation/Navigation.css);
 @import url(../Components//Grid//Grid.css);
-@import url(../Components/Utilites/Utilities.css);
+
 @import url(../Components/Toast/Toast.css);
 @import url(../Components/Rating/Rating.css);
+@import url(../Components/List/List.css);
+@import url(../Components/Utilites/Utilities.css);
 *{
   margin: 0;
   padding: 0;

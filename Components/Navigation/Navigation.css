@@ -2,14 +2,15 @@
     display: flex;
     flex-wrap: wrap;
 }
-.nav-dummy-bunch{
+.navbar-bunch{
     /* height: 30rem; */
     width: 45%;
     /* padding: 1rem; */
     
-    
+    flex-basis: 30rem;
     position: relative;
     margin: 1rem;
+    flex-grow: 1;
 }
 .nav-header{
     /* height: 4rem; */
@@ -18,9 +19,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-.nav-dummy-content{
+.navbar-content{
     height: 20rem;
-    overflow: scroll;
+    overflow-y: scroll;
     font-size: 1.5rem;
     
     scroll-behavior: smooth;
