@@ -16,6 +16,7 @@
 @import url(../Components/Rating/Rating.css);
 @import url(../Components/List/List.css);
 @import url(../Components/Utilites/Utilities.css);
+@import url(https://tangent-ui.netlify.app/);
 *{
   margin: 0;
   padding: 0;
