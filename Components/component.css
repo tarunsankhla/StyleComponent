@@ -82,6 +82,10 @@ body{
   --shade-9:#115e59;
   --shade-10:#134e4a;
 
+  --white:white;
+  --black:black;
+
+  --zIndex:0;
   --border-radius: 5px;
 }
 

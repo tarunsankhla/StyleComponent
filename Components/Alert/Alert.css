@@ -53,7 +53,7 @@
 
 .alert-warning{
     background: linear-gradient(225deg, rgba(251,235,62,1) 0%, rgba(255,194,140,1) 64%);
-    color: black;
+    color: var(--black);
     border-right: 5px solid #c2a716;
 }
 .alert-outline-warning{

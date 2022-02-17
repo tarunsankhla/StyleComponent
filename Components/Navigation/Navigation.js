@@ -11,3 +11,4 @@ function scroller()
     collapser.style.position = headerscrolltrack.scrollTop > 0 ? "absolute" : "static";
     
 }
+

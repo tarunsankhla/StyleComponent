@@ -107,13 +107,11 @@ a.navbar-items {
 
 /* Container */
 .divider{
-    /* height: 6rem; */
     font-size: 3rem;   
     word-wrap: break-word;
     display: block;
     padding: 1rem;
     font-weight: 500;
-    
     background-color: #f7f8f8;
 }
 
@@ -122,7 +120,6 @@ a.navbar-items {
     scroll-behavior: smooth;
 }
 .container-body{
-    /* font-size: 2rem; */
     display: flex;
     position: relative;
 }
@@ -151,12 +148,16 @@ fieldset{
     width: 100%;
     padding: 1rem;
     box-shadow: 0 0 25px 0 var(--box-shadow);
-    /* margin: 1rem; */
     margin-top: 2rem;
     padding-left: 3rem;
 }
 .iframe-container{
     padding: 1rem;
+    margin: 1rem 0;
+    background-color: #d3e7e1;
+    height: 30rem;
+    width: 80%;
+    overflow: scroll;
 }
 .markup{
     background-color: var(--box-shadow);
@@ -178,11 +179,7 @@ legend{
 
 .container-avatar-body *{
     margin: 1rem;
-    /* flex-grow: 1; */
 }
-
-
-
 
 /* scroll up btn style */
 
@@ -216,12 +213,8 @@ legend{
     background-color: var(--boldy-dark-green);
 }
 
-
-
-
 /* documnent page containers */
 .badge-collection{
-    /* padding:1rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -247,6 +240,12 @@ legend{
     flex-wrap: wrap;
 }
 
+/* navigation container */
+.nav-bunch{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Landing page */
 
 .illustartion-landpage{
@@ -256,8 +255,6 @@ legend{
 }
 
 .illustartion-docpage{
-    /* height: 200rem;
-    width: 100%; */
     margin-top: 2rem;
     height: 250px;
     width: 100%;
@@ -300,11 +297,6 @@ legend{
 .shorter-gist-design{
     height: 25rem;
 }
-/* 
-.landing-main-image >.illustartion-landpage{
-    height: 30rem;
-    width: 30rem;
-} */
 
 .landing-container-main{
     display: flex;
@@ -314,8 +306,6 @@ legend{
 }
 
 .landing-main-content{
-    /* word-wrap: break-word; */
-    /* word-break: break-all; */
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -324,7 +314,6 @@ legend{
     flex-basis: 300px;
 }
 .landing-main-image{
-    /* flex-basis: 50rem; */
     padding: 1rem;
     flex-grow: 1;
     width: 40rem;
@@ -393,7 +382,6 @@ footer{
     font-size: 2rem;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--light-bg-color); */
     background-color: #e0ebe8;
     margin-bottom: 2px solid white;
     padding: 1rem;
@@ -415,28 +403,35 @@ aside{
     position: sticky;
     top: 0;
 }
- aside::-webkit-scrollbar{
-        width: 1rem;
-    }
-    aside::-webkit-scrollbar-track{
-        background-color: var(--shade-1);
-    }
-    aside::-webkit-scrollbar-thumb{
-        background-color: var(--btn-text-color-2);
-        border-radius: 1rem;
-        border: 3px solid  var(--shade-1);
-    }
-    
-    aside::-webkit-scrollbar:hover{
-        transform: scale(1.2);
-        cursor: pointer;
-    }
+
+.flex-shadow{
+    box-shadow: 0 0 10px 0;
+    padding: 1rem;
+    /* gap: 0.5rem; */
+    line-height: 4rem;
+    border-radius: 1rem;
+}
+
+aside::-webkit-scrollbar{
+    width: 1rem;
+}
+aside::-webkit-scrollbar-track{
+    background-color: var(--shade-1);
+}
+aside::-webkit-scrollbar-thumb{
+    background-color: var(--btn-text-color-2);
+    border-radius: 1rem;
+    border: 3px solid  var(--shade-1);
+}
+
+aside::-webkit-scrollbar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 /* Media Query */
 
 @media screen and (max-width: 800px) {
     aside{
-        /* display: block; */
-        display: fixed !important;
         border: 1px solid black;
         flex-basis: 15rem;
         min-width: 70vw;
@@ -444,26 +439,14 @@ aside{
         height: 100%;
         width: 0;
         z-index: 1;
-        /* top: 10%;
-        left: 10vw; */
         top:0;
         left: 0;
         background-color: white;
         transition: 0.5s;
         position: absolute;
-        /* position: fixed; */
         height: 80vh;
         overflow-y: scroll;
-
-         /* padding: 1rem; */
-        /* position: absolute; */
-        /* overflow-x: hidden; */
-        /* position: -webkit-sticky;
-        position: sticky;
-        top: 0; */
     }
-
-   
 
     .gist-design{
         width: 100vw;
@@ -472,12 +455,6 @@ aside{
 
 
 @media screen and (min-width: 800px) {
-    /* aside{
-       float: left;
-       position: -webkit-sticky;
-       position: sticky;
-       top: 0;
-    } */
     .installation-img{
         display: flex;
     }
@@ -487,3 +464,80 @@ aside{
         color:#539987;
     }
 }
+
+
+/********* CODE SNIPPET  : HTML ****************/
+
+/* for copy button */
+div.code-toolbar > .toolbar {
+    opacity: 1;
+    z-index: 1;
+  }
+  /* BACKGROUND */
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: var(--INFO-BG);
+    border: 1px solid var(--LIGHT-GRAY);
+  }
+  
+  /* TAG <> COLOR */
+  .token.punctuation {
+    color: var(--RED);
+  }
+  
+  /* TAG NAME COLORS */
+  .token.attr-name,
+  .token.deleted,
+  .token.namespace,
+  .token.tag {
+    color: var(--RED);
+  }
+  
+  /* CLASS COLOR */
+  .token.attr-value,
+  .token.char,
+  .token.regex,
+  .token.string,
+  .token.variable {
+    color: rgb(1, 67, 97);
+  }
+  
+  /* TEXT CONTENT  */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: var(--SUCCESS);
+    width: 70vw;
+    overflow: scroll;
+    height: 50vh;
+  }
+  
+  div.code-toolbar > .toolbar > .toolbar-item > a,
+  div.code-toolbar > .toolbar > .toolbar-item > button,
+  div.code-toolbar > .toolbar > .toolbar-item > span {
+    color: black;
+  }
+  
+  /*********  CODE SNIPPET : CSS  ************/
+  .token.atrule,
+  .token.builtin,
+  .token.important,
+  .token.keyword,
+  .token.selector {
+    color: #ba2026;
+  }
+  /*  for funtions */
+  .token.boolean,
+  .token.function,
+  .token.number {
+    color: #296919;
+  }
+
+  @media screen and (max-width: 800px) {
+       /* TEXT CONTENT  */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: var(--SUCCESS);
+    width: 85vw;
+    overflow: scroll;
+  }
+  }

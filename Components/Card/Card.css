@@ -35,19 +35,10 @@
 }
 
 .card-footer{
-    /* display: flex;
-    justify-content: space-around;
-    font-weight: 500;
-    
-    height: 10%;
-    align-items: center;
-    background-color: transparent; */
-
-    display: flex;
+        display: flex;
     height: 10%;
     width: 100%;
     padding:0.3rem;
-    /* margin: 0.3rem; */
 }
 
 .card-footer-view{
@@ -67,7 +58,6 @@
     justify-content: center;
     cursor: pointer;
     border-radius: 5px;
-    /* margin:0 0.3rem; */
     padding: 1rem;
     font-weight: 700;
     background-color: transparent;
@@ -206,7 +196,6 @@
 .cart-card  > .card-footer > .card-footer-view{
     width: 100%;
     background-color: #c6c6c6;
-    /* padding: 1rem; */
 }
 
 .cart-card > .card-footer > .card-footer-view:hover{

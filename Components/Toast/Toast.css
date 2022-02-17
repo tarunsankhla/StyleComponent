@@ -8,20 +8,18 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
     border-top: 6px solid var(--shade-6);
-    /* display: flex; */
-    /* justify-content: space-between; */
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 1rem;
     margin: 1rem;
-    width: 80%;
+    width: 50%;
     border-radius: var(--border-radius);
     background-color: var(--shade-0);
 }
 .toast > .material-icons-round{
     color:var(--shade-6);;
 }
-.toast_stacked{
+.toast-stacked{
     flex-flow: column;
 }
 
@@ -39,7 +37,7 @@
     font-weight: 800;
     cursor: pointer;
     border-radius: 50%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     padding: 5px;
 }
 .toast-container{
@@ -50,7 +48,6 @@
 .toast-header{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
     gap: 2rem;
     width: 100%;

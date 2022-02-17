@@ -1,19 +1,12 @@
-.nav-bunch{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .navbar-bunch{
-    /* height: 30rem; */
     width: 45%;
-    /* padding: 1rem; */
-    
     flex-basis: 30rem;
     position: relative;
     margin: 1rem;
     flex-grow: 1;
 }
 .nav-header{
-    /* height: 4rem; */
     background-color: var(--hover-color);
     font-size: 2rem;
     display: flex;

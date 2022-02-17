@@ -10,7 +10,10 @@ var navbar_li = document.querySelectorAll('.sidebar-body-content');
 var btn_scrolltop=document.querySelector('#scroll-top-btn');
 console.log(document.body.clientWidth);
 
-// jQuery(document).ready(function($) {
+
+/**
+ * The method adjust the navigation of component and toggle the menu bar icon
+ */
 alterClass();
 function alterClass(){
     console.log("alter called")
@@ -42,26 +45,27 @@ function alterClass(){
 
     }
 }
+
+/**
+ * on resize of screen manage the aside navigation bar 
+ */
 document.body.onresize(()=>{
     alterClass();
 })
-// document.resize.(function(){
-//     alterClass();
-// });
-    // $(window).resize(function(){
-    //     alterClass();
-    // });
-// })
 
+/**
+ * (menu bar click)in mobile view to toggle the modal view to visible
+ */
 
 nav_toggler.addEventListener('click',()=>{
-    console.log("tog");
     document.querySelector('.hide-nav').style.visibility ="visible";
 })
 
+/**
+ * (menu bar click) in mobile view to toggle the modal view to hidden
+ */
 
 nav_closer.addEventListener('click',()=>{
-    console.log("tog");
     document.querySelector('.hide-nav').style.visibility ="hidden";
 })
 
@@ -74,7 +78,9 @@ for(let i=0;i<navbar_li.length;i++){
 
 
 
-// scroll to top
+/**
+ * on scroll to hide or show the float button
+ */
 window.onscroll = function(){ 
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
         btn_scrolltop.style.display ="block";
@@ -85,6 +91,10 @@ window.onscroll = function(){
     }
 }
 
+
+/**
+ * on click of the float button to move to top
+ */
 btn_scrolltop.addEventListener('click',()=>{
     console.log("Scroller click");
     document.body.scrollTop =0;
