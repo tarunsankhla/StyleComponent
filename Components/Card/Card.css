@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 25rem;
-    height: 30rem;
+    height: fit-content;
     background-color: var(--shade-1);
     margin: 7px;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
@@ -17,6 +17,7 @@
     height: 15rem;
     border-radius: 7px 7px 0 0;
     object-fit: cover;
+    flex-grow: 1;
 }
 
 .card-content{
@@ -34,19 +35,10 @@
 }
 
 .card-footer{
-    /* display: flex;
-    justify-content: space-around;
-    font-weight: 500;
-    
-    height: 10%;
-    align-items: center;
-    background-color: transparent; */
-
-    display: flex;
+        display: flex;
     height: 10%;
     width: 100%;
     padding:0.3rem;
-    /* margin: 0.3rem; */
 }
 
 .card-footer-view{
@@ -61,14 +53,12 @@
     color: var(--btn-text-color);
 }
 
-.card-footer-view > button,span{
+.card-footer-view *{
     border: none;
-    padding: 3px;
     justify-content: center;
     cursor: pointer;
     border-radius: 5px;
-    margin:0 0.3rem;
-    padding: 2px;
+    padding: 1rem;
     font-weight: 700;
     background-color: transparent;
 }
@@ -77,6 +67,10 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
+}
+
+.card-footer-action > span,button{
+    padding: 1rem;
 }
 
 .card-footer-action > span:hover{
@@ -138,8 +132,8 @@
 
 /* vertical card */
 .card-horizontal{
-    height: 15rem;
-    width:30rem;
+    height: fit-content;
+    width:27rem;
 }
 
 .card-horizontal-layout{
@@ -159,8 +153,7 @@
 
 .card-horizontal > .card-footer{
     padding: 1rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;    
 }
 
 
@@ -203,7 +196,6 @@
 .cart-card  > .card-footer > .card-footer-view{
     width: 100%;
     background-color: #c6c6c6;
-    /* padding: 1rem; */
 }
 
 .cart-card > .card-footer > .card-footer-view:hover{
@@ -213,6 +205,7 @@
 
 .cart-card > .card-footer > .card-footer-view > button{
     width: 100%;
+    padding: 1rem;
 }
 .cart-card > .card-footer > .card-footer-view > button:hover{
     background: transparent;

@@ -2,7 +2,6 @@
     position: relative;
     display: inline-flex;
     flex-wrap: wrap;
-
 }
 
 .badge{
@@ -45,11 +44,15 @@
     background-color: var(--bold-blue-color);
 }
 .topleft-badge{
-    top: 0;
-    left: 0;
+    top: -4px;
+    left: -5px;
+}
+.topright-badge{
+    top: -2px;
+    right: -8px;
 }
 
-.topright-badge{
-    top: -1px;
-    right: -1px;
+.circle-avatar-badge{
+    bottom: 7px;
+    right: 7px;
 }

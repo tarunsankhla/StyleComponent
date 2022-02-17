@@ -1,0 +1,94 @@
+.dialog-bunch{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dialog {
+    display: flex;
+    flex-flow: column;
+    /* position: fixed; */
+    z-index: 10;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 6px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    background-color: white;
+    max-height: 36rem;
+    min-width: 24rem;
+    max-width: 24rem;
+    margin: 1rem;
+}
+
+.alert-dialog{
+    height: 15rem;
+}
+
+.dailog-header{
+    padding: 1rem;
+    font-weight: 800;
+}
+
+.dailog-body {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.confirmation-body{
+    max-height: 15rem;
+    overflow-y:scroll;
+}
+.dailog-body li{
+    /* padding: 5px; */
+    display: flex;
+    flex-flow: row;
+    align-items: center;justify-content: center;
+}
+
+.dailog-body span{
+    background-color: transparent;
+}
+.dialog-body-item{
+    padding: 7px;
+   align-self: center;
+   flex-grow: 1;
+}
+
+
+.dailog-footer{
+    display: flex;
+    padding: 0.5rem;
+}
+.dailog-footer button{
+    margin: 0.3rem;
+    padding: 1rem 0;
+    flex-grow: 1;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    color: var(--btn-text-color);
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.dailog-footer button:hover{
+    background-color: var(--hover-color);
+    border:none;
+}
+
+.dialog-simple >.dailog-footer{
+    display: none;
+}
+
+.dialog-simple >.dailog-body{
+    height: 80%;
+   
+}
+
+.dialog-simple >.dailog-body li{
+    display: block;
+    padding: 1rem;
+}
+

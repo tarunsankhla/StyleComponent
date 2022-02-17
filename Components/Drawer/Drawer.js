@@ -1,12 +1,8 @@
 var drawer = document.querySelector('.drawer-model');
 var drawermodaloverlay = document.querySelector('.drawer-model-menu-over');
-
 var pushdrawer = document.querySelector('.drawer-push');
-
 var draweroverlaycontainer = document.querySelector('.drawer-container-overlay');
-
 var drawermodal = document.querySelector('.drawer-overlay');
-
 var drawerheadoverlay = document.querySelector('.drawer-container-header');
 var drawercloseoverlay = document.querySelector('.drawer-close-modal');
 

@@ -23,10 +23,8 @@
 .overlay-img-slider{
     position: absolute;
     top: 50%;
-    /* left: 50%; */
     background-color: white;
-    /* width: 100%; */
-    z-index: 9999;
+    z-index: var(--zIndex);
     left: 0;
     width: -webkit-fill-available;
     justify-content: center;
