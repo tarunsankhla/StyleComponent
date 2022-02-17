@@ -240,6 +240,12 @@ legend{
     flex-wrap: wrap;
 }
 
+.flex-shadow{
+    padding: 1rem;
+    box-shadow: 0 0 10px 0 gray;
+    line-height: 4rem;
+}
+
 /* navigation container */
 .nav-bunch{
     display: flex;
