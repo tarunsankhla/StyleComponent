@@ -16,6 +16,8 @@
 @import url(../Components/Rating/Rating.css);
 @import url(../Components/List/List.css);
 @import url(../Components/Utilites/Utilities.css);
+
+@import url(../Components/Slider/Slider.css);
 @import url(https://tangent-ui.netlify.app/);
 *{
   margin: 0;
@@ -51,7 +53,9 @@ body{
 
   --bold-blue-color:#2d3142;
   --pleasent-blue-color:#B0D7FF;
-
+  
+  --rating-star:#ffcc00;
+  --rating-star-dull-color: rgb(180, 180, 180);
   --warinng-base-color:#fbff00;
   --warning-light-color:#fffff6;
   --warning-bg-color-gradient :linear-gradient(90deg, rgba(249,255,25,1) 0%, rgba(255,194,140,1) 100%);

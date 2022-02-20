@@ -480,6 +480,9 @@ div.code-toolbar > .toolbar {
     BACKGROUND-COLOR: #27474e;
     border-radius: 7px;
   }
+
+
+  div.code-toolbar > .toolbar {}
   /* BACKGROUND */
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
@@ -525,6 +528,13 @@ div.code-toolbar > .toolbar {
     color: rgb(252, 252, 252);
     background-color: transparent;
   }
+
+  div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+  div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+  div.code-toolbar > .toolbar > .toolbar-item > span:hover {
+    transform: scale(1.05);
+    opacity: 1.2;
+  }
   
   /*********  CODE SNIPPET : CSS  ************/
   .token.atrule,
@@ -562,6 +572,15 @@ div.code-toolbar > .toolbar {
   pre[class*="language-"]::-webkit-scrollbar:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    /* TEXT CONTENT  */
+code[class*="language-"],
+pre[class*="language-"] {
+ color: var(--SUCCESS);
+ width: 64vw;
+ overflow: scroll;
+}
 }
   @media screen and (max-width: 800px) {
        /* TEXT CONTENT  */

@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../prism.css">
     <link rel="stylesheet" href="./Documentation.css">
-    <link rel="stylesheet" href="../Components/component.css">
+   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" referrerpolicy="no-referrer" /> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
         rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-      <script defer src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Components/component.css">
+    <script defer src="./script.js"></script>
     <script defer src="../Components/Drawer/Drawer.js"></script>
+    <script defer src="../Components/Rating/Rating.js"></script>
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
@@ -29,13 +36,17 @@
         <div>
             <a href="https://github.com/tarunsankhla">
                 <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fab fa-github" aria-hidden="true"></i>
             </a>
             <a href="https://www.linkedin.com/in/tarun-sankhla/">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="https://twitter.com/tarunsankhla__">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-twitter"></i>
             </a>
+            <span class="nav-icon">
+                <i class="fas fa-moon" id="toggle-theme"></i>
+            </span>
         </div>
     </div>
     <div class="container-body">
@@ -62,6 +73,7 @@
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#toast-container">Toast</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#rating-container">Rating</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#dialog-container">Modal</a></li>             
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#slider-container">Slider</a></li>             
             </ul>       
         </aside>
         
@@ -1998,189 +2010,59 @@
                             <legend class="divider">Rating</legend>
                             <div>Rating are generally used of rating a application or can act as a filter for an application search use case like where in based on rating of products you can search</div>
                             <div class="rating-bunch">
-                                <div class="page">
-                                    <div class="page__demo">
-                                      <div class="page__group">
-                                        <div class="rating">
-                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
-                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
-                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
-                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
-                                          <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
-                                          <label for="rc1" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">1</span>
-                                          </label>
-                                          <label for="rc2" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">2</span>
-                                          </label>
-                                          <label for="rc3" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">3</span>
-                                          </label>
-                                          <label for="rc4" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">4</span>
-                                          </label>
-                                          <label for="rc5" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">5</span>
-                                          </label>	
-                                        </div>
-                                        <span class="page__hint">unselected state</span>
-                                      </div>
-                                      <div class="page__group">  
-                                        <div class="rating">
-                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc6">
-                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc7">
-                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc8" checked>
-                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc9">
-                                          <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc10">
-                                          <label for="rc6" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">1</span>
-                                          </label>
-                                          <label for="rc7" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">2</span>
-                                          </label>
-                                          <label for="rc8" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">3</span>
-                                          </label>
-                                          <label for="rc9" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">4</span>
-                                          </label>
-                                          <label for="rc10" class="rating__item">
-                                            <svg class="rating__star">
-                                              <use xlink:href="#star"></use>
-                                            </svg>
-                                            <span class="screen-reader">5</span>
-                                          </label>	
-                                        </div>    
-                                        <span class="page__hint">selected state</span>  
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-                                    <symbol id="star" viewBox="0 0 26 28">
-                                      <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
-                                    </symbol>
-                                  </svg>
-                                  
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
                             </div>
                         </fieldset>
                         <script type="text/plain" class="line-numbers language-markup ">
-                            <div class="page">
-                                <div class="page__demo">
-                                  <div class="page__group">
-                                    <div class="rating">
-                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
-                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
-                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
-                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
-                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
-                                      <label for="rc1" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">1</span>
-                                      </label>
-                                      <label for="rc2" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">2</span>
-                                      </label>
-                                      <label for="rc3" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">3</span>
-                                      </label>
-                                      <label for="rc4" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">4</span>
-                                      </label>
-                                      <label for="rc5" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">5</span>
-                                      </label>	
-                                    </div>
-                                    <span class="page__hint">unselected state</span>
-                                  </div>
-                                  <div class="page__group">  
-                                    <div class="rating">
-                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc6">
-                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc7">
-                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc8" checked>
-                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc9">
-                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc10">
-                                      <label for="rc6" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">1</span>
-                                      </label>
-                                      <label for="rc7" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">2</span>
-                                      </label>
-                                      <label for="rc8" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">3</span>
-                                      </label>
-                                      <label for="rc9" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">4</span>
-                                      </label>
-                                      <label for="rc10" class="rating__item">
-                                        <svg class="rating__star">
-                                          <use xlink:href="#star"></use>
-                                        </svg>
-                                        <span class="screen-reader">5</span>
-                                      </label>	
-                                    </div>    
-                                    <span class="page__hint">selected state</span>  
-                                  </div>
-                                </div>
-                              </div>
-                              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-                                <symbol id="star" viewBox="0 0 26 28">
-                                  <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
-                                </symbol>
-                              </svg>
-                              
+                             
+                            <div class="rating-bunch">
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                                <span class="material-icons-round rating-star-icon">
+                                    star_rate
+                                </span>
+                            </div>
+                        </script>
+                        <h3>JavaScript for rating </h3>
+                        <script type="text/plain" class="line-numbers language-markup ">
+                            const AllRatingIcons = document.querySelectorAll('.rating-star-icon');
+
+                            AllRatingIcons.forEach((item,index)=>{
+                                item.addEventListener('click',()=>{
+                                    console.log("clicked",item,index);
+                                    AllRatingIcons.forEach((_item,_index)=>{
+                                        if(_index<=index){
+                                            _item.style.color = "#ffcc00"
+                                        }else{
+                                            _item.style.color ="rgb(180, 180, 180)"
+                                        }
+                                    })
+                                })
+                            })
                         </script>
                     </div>
 
@@ -2428,6 +2310,116 @@
                                             </div>
                                         </div></li>
                                 </ul>
+                        </script>
+                    </div>
+                     <!-- Slider -->
+                     <div id="slider-container">
+                        <fieldset>
+                            <legend class="divider">Slider</legend>
+                            <div>Sliders are generally used of select a quantity out of a range mostly used in price range or percantile</div>
+                            <div class="slider-bunch">
+                                <label for="name" class="label-slider">
+                              <input type="range" class="slider-basic" max="100" min="0" name="range"/>
+                            </label>
+
+                            <div class="slider-container">
+                                <label class="slider-track" for="range">
+                                    <input class="slider" type="range" name="range" id="range" min="0" max="150" value="15"/>
+                                </label>
+                            </div>
+                            </div>
+                        </fieldset>
+                        <script type="text/plain" class="line-numbers language-markup ">
+                            <div class="page">
+                                <div class="page__demo">
+                                  <div class="page__group">
+                                    <div class="rating">
+                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+                                      <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+                                      <label for="rc1" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">1</span>
+                                      </label>
+                                      <label for="rc2" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">2</span>
+                                      </label>
+                                      <label for="rc3" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">3</span>
+                                      </label>
+                                      <label for="rc4" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">4</span>
+                                      </label>
+                                      <label for="rc5" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">5</span>
+                                      </label>	
+                                    </div>
+                                    <span class="page__hint">unselected state</span>
+                                  </div>
+                                  <div class="page__group">  
+                                    <div class="rating">
+                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc6">
+                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc7">
+                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc8" checked>
+                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc9">
+                                      <input type="radio" name="rating-star2" class="rating__control screen-reader" id="rc10">
+                                      <label for="rc6" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">1</span>
+                                      </label>
+                                      <label for="rc7" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">2</span>
+                                      </label>
+                                      <label for="rc8" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">3</span>
+                                      </label>
+                                      <label for="rc9" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">4</span>
+                                      </label>
+                                      <label for="rc10" class="rating__item">
+                                        <svg class="rating__star">
+                                          <use xlink:href="#star"></use>
+                                        </svg>
+                                        <span class="screen-reader">5</span>
+                                      </label>	
+                                    </div>    
+                                    <span class="page__hint">selected state</span>  
+                                  </div>
+                                </div>
+                              </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                                <symbol id="star" viewBox="0 0 26 28">
+                                  <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+                                </symbol>
+                              </svg>
+                              
                         </script>
                     </div>
                 </div>

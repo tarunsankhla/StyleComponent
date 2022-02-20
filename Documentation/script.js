@@ -26,7 +26,6 @@ function alterClass(){
         
         document.querySelector('.container-drawer').style.visibility ="visible";
         container.addEventListener('click',()=>{
-            console.log('click');
             
             document.querySelector('.hide-nav').style.transition= "0.5s";
             document.querySelector('.hide-nav').style.visibility ="hidden";
