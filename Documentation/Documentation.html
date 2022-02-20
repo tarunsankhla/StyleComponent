@@ -22,30 +22,42 @@
     <script defer src="./script.js"></script>
     <script defer src="../Components/Drawer/Drawer.js"></script>
     <script defer src="../Components/Rating/Rating.js"></script>
+    <script defer src="../Documentation/theme.js"></script>
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
     <div class="navbar">
         <div class="navbar-title">
             <img loading="lazy" loading="lazy" class="navbar-image" src="../assets/Img/logo.png">
-            <div>Tangent-UI</div></div>
-        <div class="navbar-body">
-            <a  class="navbar-items" href="../index.html">Home</a>
-            <a  class="navbar-items" href="./Documentation.html">Documentation</a>
+            <div>Tangent-UI</div>
         </div>
-        <div>
-            <a href="https://github.com/tarunsankhla">
+        <div class="navbar-body">
+            <a  class="navbar-items-main" href="../index.html">Home</a>
+            <a  class="navbar-items-main" href="./Documentation.html">Documentation</a>
+        </div>
+        <div class="nav-icon-bunch">
+            <a class="nav-icon" href="https://github.com/tarunsankhla">
                 <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-            <a href="https://www.linkedin.com/in/tarun-sankhla/">
+            <a class="nav-icon" href="https://www.linkedin.com/in/tarun-sankhla/">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://twitter.com/tarunsankhla__">
+            <a class="nav-icon" href="https://twitter.com/tarunsankhla__">
                 <i class="fab fa-twitter"></i>
             </a>
-            <span class="nav-icon">
+            <!-- <button onclick="themeModeFunction()" class="nav-icon">
                 <i class="fas fa-moon" id="toggle-theme"></i>
-            </span>
+            </button> -->
+            
+           
+        </div>
+        <div class="nav-icon">
+            <input type="checkbox" class="checkbox checkbox-theme-mode" id="checkbox">
+            <label for="checkbox" class="label-theme-mode">
+            <i class="fas fa-moon"></i>
+            <i class='fas fa-sun'></i>
+            <div class='ball-theme-mode'>
+            </label>
         </div>
     </div>
     <div class="container-body">

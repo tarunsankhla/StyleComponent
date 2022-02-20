@@ -67,7 +67,9 @@ body{
   --boldy-dark-green: #27474E;
   --boldy-dim-pink: #EAE8FF;
   --boldy-bright-pink: #FFDDE2;
+
   --box-shadow :#d2e4df;
+  --box-shadow-dark :#4d5351;
 
   --dark-theme-bg :#2e3440;
   --dark-theme-nav-bg:#539987;
@@ -85,7 +87,7 @@ body{
   --shade-8:#0f766e;
   --shade-9:#115e59;
   --shade-10:#134e4a;
-
+  --shade-11:#29323f;
   --white:white;
   --black:black;
 

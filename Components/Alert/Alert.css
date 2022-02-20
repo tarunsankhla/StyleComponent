@@ -62,4 +62,5 @@
     background-color: var(--warning-light-color);
     border-color: #ffd700;
     border-right: 5px solid #ffd700;
+    color: var(--black);    
 }
