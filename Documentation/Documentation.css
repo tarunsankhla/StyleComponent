@@ -259,6 +259,11 @@ legend{
 }
 
 
+.footer-navigator{
+    text-decoration: none;
+    color: var(--pleasent-warning);
+    padding: 0 1rem;
+}
 /* Landing page */
 
 .illustartion-landpage{
