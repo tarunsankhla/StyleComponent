@@ -21,6 +21,8 @@
 }
 .toast-stacked{
     flex-flow: column;
+    width: 70%;
+    padding: 0;
 }
 
 .toast-warning{
