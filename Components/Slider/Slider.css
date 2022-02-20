@@ -35,6 +35,5 @@
 
   .slider-disabled::-webkit-slider-thumb {
     -webkit-appearance: none;
-    -ms-behavior: none;
     background: gray;
 }
