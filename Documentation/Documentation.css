@@ -98,11 +98,13 @@ a.navbar-items {
     padding:0.5rem 1rem;
     font-weight: 500;
     color: var(--boldy-dark-purple);
-
+    width: 100%;
+    border-radius: 5px;
 }
 
 .sidebar-body-content:hover{
     color: var(--btn-text-color);
+    background-color: var(--shade-1);
 }
 
 /* Container */
@@ -509,7 +511,7 @@ div.code-toolbar > .toolbar {
   .token.string,
   .token.variable {
     color: rgb(1, 67, 97);
-    background-color: #dee5e1;
+    /* background-color: #dee5e1; */
   }
   
   /* TEXT CONTENT  */

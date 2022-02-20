@@ -35,7 +35,6 @@
         </div>
         <div>
             <a href="https://github.com/tarunsankhla">
-                <i class="fa fa-github" aria-hidden="true"></i>
                 <i class="fab fa-github" aria-hidden="true"></i>
             </a>
             <a href="https://www.linkedin.com/in/tarun-sankhla/">
@@ -56,6 +55,16 @@
                     cancel
                 </span>
             </div>
+            <label class="sidebar-title">Get Started</label>
+            <ul class="sidebar-body">
+               
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#installation-container">Installation Guide</a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#utility-container">Utilities</a></li>
+
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#typography-container">Typography</a></li>
+                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#grid-container">Grid Layout</a></li>
+
+            </ul> 
             <label class="sidebar-title">Components</label>
             <ul class="sidebar-body">
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#avatar-container">Avatar</a></li>
@@ -66,8 +75,6 @@
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#image-container">Image </a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#input-container">Input</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#drawer-container">Drawer</a></li>
-                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#typography-container">Typography</a></li>
-                <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#grid-container">Grid</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#navigation-container">Navigation</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#list-container">List</a></li>
                 <li class="sidebar-body-content" ><a  class="sidebar-body-content" href="#toast-container">Toast</a></li>
@@ -86,6 +93,113 @@
             </div>
             <div class="document-container">
                 <div class="content">
+                    <!-- Installation -->
+                    <div id="installation-container" class="installation-content">
+                        <fieldset>
+                            <legend class="divider">Installation Guide</legend>
+                            <div>
+                                You can start using Tangent-UI with minimal front-end infra-structure.
+                                For Installation, you only need to include T-UI compiled CSS; simply you need to add the link reference in the head tag of your
+                                 html documents and you are good to start by simply adding class name to you html elemnts
+                                
+                            </div>
+                            </fieldset>
+                            <script type="text/plain" class="line-numbers language-markup ">
+                                <link
+                                rel="stylesheet"
+                                href="https://tangent-ui.netlify.app/Components/component.css"
+                                referrerpolicy="no-referrer"
+                            />
+                            
+                                // use this script tag if you intended to use the feature of Rating
+                                <script 
+                                        src="https://tangent-ui.netlify.app/Components/Rating/Rating.js" defer><script>
+                                
+                                // use this script tag if you intended to use the feature of Navigation
+                                <script 
+                                        src="https://tangent-ui.netlify.app/Components/Navigation/Navigation.js" defer><script>
+                                
+                                // use this script tag if you intended to use the feature of Drawer
+                                <script 
+                                        src="https://tangent-ui.netlify.app/Components/Drawer/Drawer.js" defer><script>
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Utilities -->
+                    <div id="utility-container" class="utility-content">
+                        <fieldset>
+                            <legend class="divider">Utilities</legend>
+                            <div>
+                                Tangent-Ui provides multiple range of utiliy classes for margin, padding and gaps.
+                                <h4>Margin and Padding are provided with abbravation of sm - small, md - medium, lg - large and can use the following classname based on requirements</h4>
+                                <div class="flex-wrapper">
+                                    <ul>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            padding-sm</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            padding-md</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            padding-lg</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            padding-xlg</li>
+        
+                                    </ul>
+                                    <ul>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            margin-sm</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            margin-md</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            margin-lg</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            margin-xlg</li>
+        
+                                    </ul>
+                                </div>
+                                <h4>Now margin and padding based on direction, the abbrevation used are p - padding, m - margin, t - top , b - bottom, l - left, r- right</h4>
+                                <div class="flex-wrapper">
+                                    <ul>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            p-t</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            p-b</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            p-l</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            p-r</li>
+        
+                                    </ul>
+                                    <ul>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            m-t</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            m-b</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            m-l</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            m-r</li>        
+                                    </ul>
+                                </div>
+                                    <div>For centering at text you can use class <span class="markup">text-center</span> -  helps to center text <span class="markup">margin-center</span> - centers a element based on margin</div>
+                                    <div>You can also manipulate the size by using classNAme <span class="markup">fit-content</span> - which will take space on space required by child elemets <span class="markup">flex-wrapper</span> -uses display as flex and wraps based on screen size</div>
+                                <h4>Tangent-Ui also provides space/gap between element used under grid or flex, you can use these classnames:</h4>
+                                <div class="flex-wrapper">
+                                    <ul>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            gap-sm</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            gap-mb</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                            gap-lg</li>
+                                        <li  class="list-body-item padding-sm list-bullet list-bullet-circle">
+                                           no-gap</li>
+        
+                                    </ul>
+                                    </div>
+                                
+                            </div>
+                        </fieldset>
+                    </div>
                     <!-- Avatar -->
                     <div id="avatar-container" class="avatar-content">
                         <fieldset>

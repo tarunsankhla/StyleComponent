@@ -63,6 +63,32 @@
     gap:1rem
 }
 
-.no-grp{
+.no-gap{
     gap: 0;
+}
+
+.m-t{
+    margin-top: 1rem;
+}
+.m-b{
+    margin-bottom: 1rem;
+}
+.m-l{
+    margin-left: 1rem;
+}
+.m-r{
+    margin-right: 1rem;
+}
+
+.p-t{
+    padding-top: 1rem;
+}
+.p-b{
+    padding-bottom: 1rem;
+}
+.p-l{
+    padding-left: 1rem;
+}
+.p-r{
+    padding-right: 1rem;
 }
