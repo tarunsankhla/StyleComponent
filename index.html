@@ -16,13 +16,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script defer src="./Documentation/script.js"></script>
     <link rel="stylesheet" href="./prism.css">
+    
+    <script defer src="../Documentation/theme.js"></script>
     <script src="./prism.js" defer></script>
     <style>
           code[class*="language-"],
-  pre[class*="language-"] {
-    width: 95vw;
-    height: 25vh;
-  }
+            pre[class*="language-"] {
+                width: 95vw !important;
+                height: 25vh !important;
+            }
+
     </style>
     <title>Tangent-UI</title>
 </head>
@@ -56,10 +59,12 @@
         For Installation, you only need to include T-UI compiled CSS; simply you need to add the link reference in the head tag of your
          html documents and you are good to start by simply adding class name to you html elemnts
         </div>
-         <img class="installation-img" src="./assets/Img/homebackg.png" alt="">
+         <img class="installation-img" src="./assets/Img/homebackg.png" alt="installation-banner">
 
     </div>
-    <script type="text/plain" class="line-numbers language-markup ">
+    <script type="text/plain" class="line-numbers language-markup " style="
+                width: 95vw;
+              ">
         <link
         rel="stylesheet"
         href="https://tangent-ui.netlify.app/Components/component.css"
@@ -79,8 +84,8 @@
       </script>
     </div>
     <footer>
-        <div><a href="https://github.com/tarunsankhla/StyleComponent" class="btn btn=icon">Go to code</a></div>
-        Made with ❤ by Tarun.
+        <!-- <div><a href="https://github.com/tarunsankhla/StyleComponent" class="btn btn=icon">Go to code</a></div> -->
+        Made with ❤ by <a class="footer-navigator" href="https://github.com/tarunsankhla/"> Tarun</a>.
     </footer>
   
 </body>

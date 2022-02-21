@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../prism.css">
+   
     <link rel="stylesheet" href="./Documentation.css">
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -22,31 +22,41 @@
     <script defer src="./script.js"></script>
     <script defer src="../Components/Drawer/Drawer.js"></script>
     <script defer src="../Components/Rating/Rating.js"></script>
+    <script defer src="../Documentation/theme.js"></script> 
+    <link rel="stylesheet" href="../prism.css">
     <title>Tangent-UI</title>
 </head>
 <body onresize="alterClass()">
-    <div class="navbar">
+    <div class="navbar-main">
         <div class="navbar-title">
-            <img loading="lazy" loading="lazy" class="navbar-image" src="../assets/Img/logo.png">
-            <div>Tangent-UI</div></div>
-        <div class="navbar-body">
-            <a  class="navbar-items" href="../index.html">Home</a>
-            <a  class="navbar-items" href="./Documentation.html">Documentation</a>
+            <img loading="lazy" loading="lazy" alt="logo_tangentUi" class="navbar-image" src="../assets/Img/logo.png">
+            <div>Tangent-UI</div>
         </div>
-        <div>
-            <a href="https://github.com/tarunsankhla">
+        <div class="navbar-body-main">
+            <a  class="navbar-items-main" href="../index.html">Home</a>
+            <a  class="navbar-items-main" href="./Documentation.html">Documentation</a>
+        </div>
+        <div class="nav-icon-bunch">
+            <a class="nav-icon" href="https://github.com/tarunsankhla">
                 <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-            <a href="https://www.linkedin.com/in/tarun-sankhla/">
+            <a class="nav-icon" href="https://www.linkedin.com/in/tarun-sankhla/">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://twitter.com/tarunsankhla__">
+            <a class="nav-icon" href="https://twitter.com/tarunsankhla__">
                 <i class="fab fa-twitter"></i>
-            </a>
-            <span class="nav-icon">
-                <i class="fas fa-moon" id="toggle-theme"></i>
-            </span>
+            </a>           
         </div>
+        <div class="navbar-theme-container">
+            <div class="nav-icon">
+                <input type="checkbox" class="checkbox checkbox-theme-mode" id="checkbox">
+                <label for="checkbox" class="label-theme-mode">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball-theme-mode'></div>
+                </label>
+            </div>
+        </div> 
     </div>
     <div class="container-body">
         <aside class="drawer-model-menu">
@@ -103,27 +113,26 @@
                                  html documents and you are good to start by simply adding class name to you html elemnts
                                 
                             </div>
-                            </fieldset>
-                            <script type="text/plain" class="line-numbers language-markup ">
-                                <link
-                                rel="stylesheet"
-                                href="https://tangent-ui.netlify.app/Components/component.css"
-                                referrerpolicy="no-referrer"
-                            />
+                        </fieldset>
+                        <script type="text/plain" class="line-numbers language-markup ">
+                            <link
+                            rel="stylesheet"
+                            href="https://tangent-ui.netlify.app/Components/component.css"
+                            referrerpolicy="no-referrer"
+                        />
+                        
+                            // use this script tag if you intended to use the feature of Rating
+                            <script 
+                                    src="https://tangent-ui.netlify.app/Components/Rating/Rating.js" defer><script>
                             
-                                // use this script tag if you intended to use the feature of Rating
-                                <script 
-                                        src="https://tangent-ui.netlify.app/Components/Rating/Rating.js" defer><script>
-                                
-                                // use this script tag if you intended to use the feature of Navigation
-                                <script 
-                                        src="https://tangent-ui.netlify.app/Components/Navigation/Navigation.js" defer><script>
-                                
-                                // use this script tag if you intended to use the feature of Drawer
-                                <script 
-                                        src="https://tangent-ui.netlify.app/Components/Drawer/Drawer.js" defer><script>
-                            </script>
-                        </div>
+                            // use this script tag if you intended to use the feature of Navigation
+                            <script 
+                                    src="https://tangent-ui.netlify.app/Components/Navigation/Navigation.js" defer><script>
+                            
+                            // use this script tag if you intended to use the feature of Drawer
+                            <script 
+                                    src="https://tangent-ui.netlify.app/Components/Drawer/Drawer.js" defer><script>
+                        </script>
                     </div>
                     <!-- Utilities -->
                     <div id="utility-container" class="utility-content">
@@ -180,8 +189,8 @@
                                             m-r</li>        
                                     </ul>
                                 </div>
-                                    <div>For centering at text you can use class <span class="markup">text-center</span> -  helps to center text <span class="markup">margin-center</span> - centers a element based on margin</div>
-                                    <div>You can also manipulate the size by using classNAme <span class="markup">fit-content</span> - which will take space on space required by child elemets <span class="markup">flex-wrapper</span> -uses display as flex and wraps based on screen size</div>
+                                <div>For centering at text you can use class <span class="markup">text-center</span> -  helps to center text <span class="markup">margin-center</span> - centers a element based on margin</div>
+                                <div>You can also manipulate the size by using classNAme <span class="markup">fit-content</span> - which will take space on space required by child elemets <span class="markup">flex-wrapper</span> -uses display as flex and wraps based on screen size</div>
                                 <h4>Tangent-Ui also provides space/gap between element used under grid or flex, you can use these classnames:</h4>
                                 <div class="flex-wrapper">
                                     <ul>
@@ -195,8 +204,7 @@
                                            no-gap</li>
         
                                     </ul>
-                                    </div>
-                                
+                                </div>
                             </div>
                         </fieldset>
                     </div>
@@ -573,7 +581,6 @@
                                 you can use className <span class="markup">input-error</span> for validation.<br/>
                                  </div>
                             <div id="input-container">
-                                <h3>input</h3>
                                 <div class="input-group">
                                     <label>Name</label>
                                     <input type="text"/>
@@ -589,6 +596,10 @@
                                         </span>
                                   <input type="tel" class="input-field"  name="main-search" id="main-search" placeholder="Search....">
                                    
+                                </div>
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="file" class="input-file"/>
                                 </div>
                             </div>
                             </fieldset>
@@ -608,6 +619,10 @@
                                         </span>
                                   <input type="tel" class="input-field"  name="main-search" id="main-search" placeholder="Search....">
                                    
+                                </div>
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="file" class="input-file"/>
                                 </div>
                             </script>
                     </div>
@@ -2083,7 +2098,10 @@
                                 <div class="toast toast-stacked">
                                     <div class="toast-header">
                                         <h4>Kernal Notification</h4>
-                                        <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                        <!-- <button class="toast-action" onclick="BadgeStackedClose();">X</button> -->
+                                        <span class="material-icons-round">
+                                            cancel
+                                        </span>
                                     </div>
                                     <div class="toast-container">
                                         The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2109,7 +2127,9 @@
                             <div class="toast toast-stacked">
                                 <div class="toast-header">
                                     <h4>Kernal Notification</h4>
-                                    <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                    <span class="material-icons-round">
+                                        cancel
+                                    </span>
                                 </div>
                                 <div class="toast-container">
                                     The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2275,7 +2295,10 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <!-- <button class="toast-action" onclick="BadgeStackedClose();">X</button> -->
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2286,7 +2309,10 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <!-- <button class="toast-action" onclick="BadgeStackedClose();">X</button> -->
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2297,7 +2323,10 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <!-- <button class="toast-action" onclick="BadgeStackedClose();">X</button> -->
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2394,7 +2423,9 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2405,7 +2436,9 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2416,7 +2449,9 @@
                                         <div class="toast toast-stacked list-body-item">
                                             <div class="toast-header">
                                                 <h4>Kernal Notification</h4>
-                                                <button class="toast-action" onclick="BadgeStackedClose();">X</button>
+                                                <span class="material-icons-round">
+                                                    cancel
+                                                </span>
                                             </div>
                                             <div class="toast-container">
                                                 The latest upgrade is available, Install it from firmware upgrade in settings.
@@ -2463,17 +2498,17 @@
                             
                         </script>
                     </div>
-                </div>
+                <!-- </div>
             
-            </div>
+            </div> -->
         </section>
 
         <button id="scroll-top-btn" class="btn btn-outline btn-icon btn-round"><span class="material-icons-round">expand_less</span></button>
         <script src="../prism.js" ></script>
     </div>
     <footer>
-        <div><a href="https://github.com/tarunsankhla/StyleComponent" class="btn btn=icon">Go to code</a></div>
-        Made with ❤ by Tarun.
+        <!-- <div><a href="https://github.com/tarunsankhla/StyleComponent" class="btn btn=icon">Go to code</a></div> -->
+        Made with ❤ by <a class="footer-navigator" href="https://github.com/tarunsankhla/"> Tarun</a>.
     </footer>
            
 
