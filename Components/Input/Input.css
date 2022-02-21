@@ -6,8 +6,11 @@
 }
 
 .input-group > input{
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0 0.5rem;
+    border-color: var(--boldy-dark-green);
+    border-radius: 5px;
+
 }
 
 .input-error{
@@ -42,4 +45,11 @@
     padding: 10px;
     text-align: center;
     border-radius: 7px;
+    min-width: 20rem;
+}
+
+.input-file{
+    padding: 1rem;
+    background-color: var(--boldy-light-gray);
+    color: var(--boldy-dark-green);
 }

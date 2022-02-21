@@ -16,7 +16,7 @@ body::-webkit-scrollbar:hover{
 } */
 
 /* Navbar style */
-.navbar{
+.navbar-main{
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem;
@@ -24,11 +24,11 @@ body::-webkit-scrollbar:hover{
     /* background-color: var(--light-bg-color); */
     background-color: #e0ebe8;
     margin-bottom: 2px solid white;
+    justify-content: space-between;
 }
-.navbar-body{
+.navbar-body-main{
     padding: 0 2rem;
     display: flex;
-    margin-left: auto;
 }
 .navbar-body > div{
     padding:1rem;
@@ -56,7 +56,7 @@ body::-webkit-scrollbar:hover{
     font-weight: 500;
 }
 
-a.navbar-items-main {
+.navbar-items-main {
     padding: 1rem;
 }
 
@@ -64,7 +64,7 @@ a.navbar-items-main {
     margin-left: auto;
     font-weight: 600;
     font-size: 3rem;
-    background-color: var(--lightest-bg-color);
+    background-color: transparent;
     padding: 3px;
     border-radius: 10%;
 }
@@ -166,7 +166,7 @@ fieldset{
 .markup{
     background-color: var(--box-shadow);
     font-weight: 500;
-    padding: 0.3rem;
+    padding: 2px;
     border-radius: 5px;
 }
 legend{
@@ -248,7 +248,7 @@ legend{
 
 .flex-shadow{
     padding: 1rem;
-    box-shadow: 0 0 10px 0 gray;
+    box-shadow: 0 0 10px 0 var(--dark-mode-box-shadow);
     line-height: 4rem;
 }
 
@@ -260,9 +260,10 @@ legend{
 
 
 .footer-navigator{
-    text-decoration: none;
-    color: var(--pleasent-warning);
+    color: #d92f48;
     padding: 0 1rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 /* Landing page */
 
@@ -427,6 +428,11 @@ aside{
 .nav-icon{
     text-decoration: none;
     padding: 0 0.5rem;
+    color: var(--boldy-dark-purple);
+}
+.nav-icon:hover{
+    transform: scale(1.05);
+    opacity: 0.5;
 }
 
 /* dark mode */
@@ -436,17 +442,17 @@ aside{
   }
 
  .dark-mode fieldset{
-    box-shadow: 0 0 25px 0 var(--box-shadow-dark);
+    box-shadow: 0 0 25px 0 var(--dark-mode-box-shadow);
  } 
 .dark-mode .sidebar-body-content {
     color: var(--shade-2);
 }
 
 .dark-mode .sidebar-body-content:hover {
-    color: var(--shade-2);
-    background-color: var(--primary-variant-color);
+    color: var(--shade-7);
+    background-color: transparent;
     transform: scale(0.98);
-    opacity: 0.95;
+    opacity: 1.55;
 }
 
 .dark-mode .divider{
@@ -455,9 +461,12 @@ aside{
 }
 
 .dark-mode .markup{
-    background-color: var(--box-shadow-dark);
-    
+    background-color: var(--shade-0 );
+    color: var(--shade-10);
     opacity: 1.2;
+}
+.dark-mode .code-toolbar{
+    background-color: #636b6d;
 }
 
 .dark-mode .card{
@@ -472,8 +481,12 @@ aside{
 }
 
 .dark-mode .navbar-items-main{
+    background-color:  transparent;
+    color: var(--boldy-mid-gray);
+}
 
-    background-color:  var(--dark-theme-bg);
+.dark-mode .nav-icon{
+    background-color:  transparent;
     color: var(--boldy-mid-gray);
 }
 
@@ -481,23 +494,27 @@ aside{
     color: var(--boldy-mid-gray);
 }
 
+.dark-mode 
+.navbar-image{
+    border-radius: 50%;
+}
+
 .dark-mode .navbar-items{
     color: var(--boldy-mid-gray);
 }
-.dark-mode .navbar{
-
-    background-color:  var(--dark-theme-bg);
+.dark-mode .navbar-main{
+    background-color:  var(--dark-theme-bg-1);
     color: var(--boldy-mid-gray);
 }
 
-.dark-mode body::-webkit-scrollbar-track{
-    background-color: var(--shade-10);
+.dark-mode .label-theme-mode {
+    background-color: black;
 }
-.dark-mode body::-webkit-scrollbar-thumb{
-    background-color: var(--btn-text-color-2);
-    border-radius: 1rem;
-    border: 3px solid  var(--shade-10);
+
+.dark-mode .list-body-item:hover{
+    background-color: transparent;
 }
+
 
 .dark-mode footer{
     color: #d3e7e1;
@@ -505,8 +522,29 @@ aside{
 } 
 
 .dark-mode .landing-container::before {
-    background-image: linear-gradient(-45deg, var(--btn-text-color) 0%, green 150%);
+    background-image: linear-gradient(-45deg, var(--btn-text-color) 0%, #aaeae2 150%);
 
+}
+
+.dark-mode .sidebar-title {
+    border-bottom: 2px solid var(--boldy-light-green);
+}
+
+.dark-mode aside::-webkit-scrollbar-track{
+    background-color: var(--dark-theme-bg-1);
+}
+.dark-modeaside::-webkit-scrollbar-thumb{
+    background-color: var(--dark-theme-bg);
+    border: var(--dark-theme-bg-1);
+}
+
+.dark-mode body::-webkit-scrollbar-track{
+    background-color: var(--dark-theme-bg-1) !important;
+}
+
+.dark-mode body::-webkit-scrollbar-thumb{
+    background-color: var(--dark-theme-bg) !important;
+    border: var(--dark-theme-bg-1) !important;
 }
 
 
@@ -519,16 +557,18 @@ aside{
   }
   
   .label-theme-mode {
-    width: 5rem;
-    height: 2.6rem;
-    background-color:#111;
+     /* width: 5rem; */
+    /* height: fit-content; */
+    background-color: white;
     display: flex;
-    border-radius:50px;
+    border-radius: 50px;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
     position: relative;
-    transform: scale(1.5);
+    gap: 0.5rem;
+    /* transform: scale(1.5); */
+
   }
   
   .ball-theme-mode {
@@ -536,11 +576,13 @@ aside{
     height: 2.2rem;
     background-color: white;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 5px;
     border-radius: 50%;
     transition: transform 0.2s linear;
   }
+
+ 
   
   /*  target the elemenent after the label*/
   .checkbox-theme-mode:checked + .label-theme-mode .ball-theme-mode{
@@ -548,18 +590,12 @@ aside{
   }
   
   .fa-moon {
-    color: pink;
+    color: var(--pink);
   }
   
   .fa-sun {
-    color: yellow;
+    color: var(--yellow);
   }
-
-
-
-
-
-
 
 
 aside::-webkit-scrollbar{
@@ -597,10 +633,18 @@ aside::-webkit-scrollbar:hover{
         height: 80vh;
         overflow-y: scroll;
     }
+    .dark-mode aside{
+        background-color: var(--dark-theme-bg);
 
+    }
+
+    .navbar-theme-container{
+        margin-left: auto;
+      }
     .gist-design{
         width: 100vw;
     }
+    
 }
 
 
@@ -622,7 +666,7 @@ aside::-webkit-scrollbar:hover{
 div.code-toolbar{
     padding: 1rem;
     margin: 1rem 0;
-    background-color: #dee5e1;
+    background-color: #e9e9e9;
     color: #033e25;
     font-weight: 600;
 }
@@ -677,7 +721,8 @@ div.code-toolbar > .toolbar {
   div.code-toolbar > .toolbar > .toolbar-item > button,
   div.code-toolbar > .toolbar > .toolbar-item > span {
     color: rgb(252, 252, 252);
-    background-color: transparent;
+    background-color: transparent !important;
+    padding: 1rem !important;
   }
 
   div.code-toolbar > .toolbar > .toolbar-item > a:hover,

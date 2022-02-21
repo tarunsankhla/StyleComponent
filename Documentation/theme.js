@@ -1,8 +1,11 @@
 var theme_btn = document.querySelector('.checkbox-theme-mode');
 var lightmode ="light-mode";
 var darkmode ="dark-mode";
-// localStorage.setItem("tangen-UI-theme","dark-mode")
-var modetheme = localStorage.getItem("tangen-UI-theme")
+if(!localStorage.getItem("tangen-UI-theme")){
+    localStorage.setItem("tangen-UI-theme","light-mode");
+}
+
+var modetheme = localStorage.getItem("tangen-UI-theme");
 
 if(modetheme == darkmode){
     console.log("dark")

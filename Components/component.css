@@ -29,7 +29,7 @@ html{
   font-size: 62.5%;
 }
 body{
-  background-color: var(--lightest-bg-color);
+  /* background-color: var(--lightest-bg-color); */
   font-family: 'Dongle', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -54,6 +54,10 @@ body{
   --bold-blue-color:#2d3142;
   --pleasent-blue-color:#B0D7FF;
   
+
+  --pink :pink;
+  --yellow:yellow;
+
   --rating-star:#ffcc00;
   --rating-star-dull-color: rgb(180, 180, 180);
   --warinng-base-color:#fbff00;
@@ -71,10 +75,12 @@ body{
   --box-shadow :#d2e4df;
   --box-shadow-dark :#4d5351;
 
-  --dark-theme-bg :#2e3440;
+  --dark-theme-bg-1 :#2e3440;
+  --dark-theme-bg :#374150;
   --dark-theme-nav-bg:#539987;
   --dark-theme-border-bg:#4d887b;
   --dark-theme-nav-text:#4d887b;
+  --dark-mode-box-shadow :#404445;
 
   --shade-0:#efefef;
   --shade-1:#f0fdfa;
