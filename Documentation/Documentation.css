@@ -50,6 +50,10 @@ body::-webkit-scrollbar:hover{
 .navbar-title > div {
     padding: 0 1rem;
 }
+
+.title-design{
+    color: #539987;
+}
 .navbar-items-main{
     text-decoration: none;
     color: var(--boldy-dark-purple);
