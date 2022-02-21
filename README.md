@@ -187,6 +187,106 @@ You can also check the live example and code on [Button Guide](https://tangent-u
 <hr/>
 
 
+### Card
+
+Card is a container to display information to user most of the time a product details showcase
+TangentUi provide variation of cards:
+- Cards with basic information and images
+- Cards with action button
+- Cards with text overlay on image
+- Horizontal Layout cards.
+- Horizontal Layout card without Image
+- Cards for Ecommerce Product
+- Cards for wishlist
+
+<br/>
+You can also check the live example and code on [Card Guide](https://tangent-ui.netlify.app/documentation/documentation#card-container)
+<hr/>
+
+### Image
+
+Image component can be used to make image responsive and round shaped.
+- image-round for a round shaped image
+- image-responsive for image to fit the width of container
+
+<br/>
+You can also check the live example and code on [Image Guide](https://tangent-ui.netlify.app/documentation/documentation#image-container)
+<hr/>
+
+
+### Drawer
+
+Drawer Navigation to provide access to functionalities or for navigating pages. It is mostly recomended for applcation which consist of Mulitple levels of hierarchy chain, so via Drawer you can get quick navigation. You can have Drawer of 3 type:
+- Permanent Drawer on the Screen which has fixed width based on content.
+- Dismissible Drawer which is rendered by menu bar and shifts the content of the page.
+- Modal Drawer which also renders by menu bar but is modaled over the existing layout.
+
+<br/>
+You can also check the live example and code on [Drawer Guide](https://tangent-ui.netlify.app/documentation/documentation#drawer-container)
+<hr/>
+
+### Navigation
+
+Navigation are app bars which are used for displaying action or navigation through out the project. We provide 4 variation of Navigation bars:
+- Standard Navigation bar which is usually and scroll out of screnn
+- Fixed which remains rigid and doesnot scroll and remains on the page.
+- Short Navbar which also works like Fixed but is not full stretched but composed of content.
+- Short Scrollar which collapse when sroll down.
+<br/>
+You can also check the live example and code on [Navigation Guide](https://tangent-ui.netlify.app/documentation/documentation#navigation-container)
+<hr/>
+
+
+### List
+
+List are generally used for stacking information in list format. Now we provide List Variation like List with an Icon + text or just text.Other Variation include having bullets of design according to your need and last one is to simply stack some toast or snackbar
+
+<br/>
+You can also check the live example and code on [List Guide](https://tangent-ui.netlify.app/documentation/documentation#list-container)
+<hr/>
+
+### Toast
+
+Toast are notifiction which are just to notify about some action or update and they usually are for just few seconds and disappear. We have currently 3 Variation of Toast or Snackbar:
+
+- Fixed which remains rigid and doesnot scroll and remains on the page.
+- other Variation is for action of warning.
+- Last one is for information with the toast but try to keep the content short.
+
+<br/>
+You can also check the live example and code on [Toast Guide](https://tangent-ui.netlify.app/documentation/documentation#toast-container)
+<hr/>
+
+### Rating
+
+Rating are generally used of rating a application or can act as a filter for an application search use case like where in based on rating of products you can search
+
+<br/>
+You can also check the live example and code on [Rating Guide](https://tangent-ui.netlify.app/documentation/documentation#rating-container)
+<hr/>
+
+### Modal
+
+Modal are use like a dialog to communicate with user and this can in form of sharing information or collecting information. We provide Dialog of 3 variation.
+- Mininmal content and Action for user to perform.
+- Only for Sharing Information or Mulitple choices.
+- Combination of both content and Action.
+
+<br/>
+You can also check the live example and code on [Modal Guide](https://tangent-ui.netlify.app/documentation/documentation#dialog-container)
+<hr/>
+
+### Slider
+
+Sliders are generally used of select a quantity out of a range mostly used in price range or percentile. We provide Slider of 2 variation.
+- Normal Slider which display the quantity
+- Disabled Slider
+
+<br/>
+You can also check the live example and code on [Slider Guide](https://tangent-ui.netlify.app/documentation/documentation#slider-container)
+<hr/>
+
+
 <hr/>
 <p align="left"> <a href="https://twitter.com/tarunsankhla21" target="blank"><img src="https://img.shields.io/twitter/follow/tarunsankhla21?logo=twitter&style=for-the-badge" alt="tarunsankhla21" /></a> </p>
 <h3 align="center">Connect with me:</h3>
