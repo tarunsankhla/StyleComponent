@@ -98,7 +98,8 @@ Now margin and padding based on direction, the abbrevation used are p - padding,
 - m-l
 - m-r
 <br/>
-You can also check the live example and code on [Utility Guide] (https://tangent-ui.netlify.app/documentation/documentation#utility-container)
+You can also check the live example and code on,
+[Utility Guide](https://tangent-ui.netlify.app/documentation/documentation#utility-container)
 
 
 <hr/>
