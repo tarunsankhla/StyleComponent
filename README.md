@@ -296,7 +296,7 @@ Sliders are generally used of select a quantity out of a range mostly used in pr
 <br/>
 You can also check the live example and code on [Slider Guide](https://tangent-ui.netlify.app/documentation/documentation#slider-container)
 <hr/>
-
+![Tangent UI gif](https://drive.google.com/file/d/1rCEMVix15jCt0TQZlR4d43AoK5OfMFZt/view?usp=sharing)
 
 <hr/>
 <p align="left"> <a href="https://twitter.com/tarunsankhla21" target="blank"><img src="https://img.shields.io/twitter/follow/tarunsankhla21?logo=twitter&style=for-the-badge" alt="tarunsankhla21" /></a> </p>
