@@ -8,7 +8,6 @@ You can check the Website on https://tangent-ui.netlify.app/
 <br/>
 Documentation Page - https://tangent-ui.netlify.app/documentation/documentation
 
-Feetz is Ecommerce platform for variety of footwear from boots, snicker, sports footwear. All in here!!
 <hr/>
  <p align="center"> <img src="https://github.com/tarunsankhla/StyleComponent/blob/master/assets/Img/logo.png" alt="logoImage" width="200px" height="200px" /></p>
  <br/>
